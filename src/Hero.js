@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
+import './Hero.scss';
 
 
-function Hero() {
+
+
+class Hero extends React.Component {
+  render() {
     return (
-        <span>HEADER</span>
-    );
-}
+      <header className="hero-component">
+      <h1 className="hero-text">Chorwacja Trip #19</h1>
+      </header> )
+  };
+};
 
 export default Hero;

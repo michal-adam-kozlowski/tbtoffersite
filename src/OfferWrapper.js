@@ -6,6 +6,8 @@ import HighLights from "./HighLights.js";
 import Map from "./Map.js";
 import Reservation from "./Reservation.js";
 import Testimonials from "./Testimonials.js";
+import './OfferWrapper.scss';
+import './Hero.scss';
 
 
 function OfferWrapper() {

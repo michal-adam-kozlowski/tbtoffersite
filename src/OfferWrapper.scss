@@ -1,0 +1,15 @@
+$--font-primary: sofia-pro, sans-serif;
+$--font-weight-n: normal;
+$--font-size-h1: 50px;
+
+
+body {
+  font-family: $--font-primary;
+  font-weight: $--font-weight-n;
+}
+
+.hero-text {
+  font-size: $--font-size-h1;
+  font-weight: $--font-weight-n;
+  font-style: normal;
+}
