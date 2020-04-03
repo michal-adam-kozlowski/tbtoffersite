@@ -3,6 +3,7 @@ import './CruiseName.scss';
 import calendar from './img/icons/calendar.png';
 import croatiaFlag from './img/icons/croatia-flag.png';
 import ship from './img/icons/ship.png'
+
 // import Cruise from './CroatiaOffer';
 
 // function OfferWrapper() {

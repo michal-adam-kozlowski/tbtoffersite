@@ -1,19 +1,13 @@
-import React from 'react';
+import React, { Component } from "react";
 import './Tag.scss';
 
 
-// function Tag(props) {
-//     return (
-//         <span>
-//             TAG {props.number}
-//         </span>
-//     );
-// }
-
-function Tag(props) {
-  return (
-   <p>Tu jest tag {props.number}</p>
-  );
-};
+class Tag extends Component {
+    render () {
+        return <div>
+         <img src={this.props.single.image} alt={"tag"} />
+           </div>
+    }
+}
 
 export default Tag;
