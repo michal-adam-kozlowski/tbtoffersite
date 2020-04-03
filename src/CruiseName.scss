@@ -1,0 +1,21 @@
+.cruise-name-component {
+  margin-left: 50px;
+  margin-bottom: 50px;
+}
+
+.cruise-name, .cruise-date, .cruise-type {
+  color: hsl(0, 0%, 20%);
+  font-weight: normal;
+  margin-top: 0;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.cruise-name-box, .cruise-date-box, .cruise-type-box {
+  display: flex;
+}
+
+.cruise-name-box img, .cruise-date-box img, .cruise-type-box img {
+  width: 20px;
+  height: 20px;
+}
