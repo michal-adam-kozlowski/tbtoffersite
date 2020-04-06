@@ -1,3 +1,10 @@
+$--font-color: hsl(0, 0%, 20%);
+$--font-family-p: Poppins,sans-serif;
+$--font-size-tag: 15px;
+$--line-height-tag: 1.5;
+$--text-align-l: left;
+
+
 .tag-box {
   display: flex;
   justify-content: space-between;
@@ -18,10 +25,11 @@
  margin-right: 10px;
 }
 
-.tag-text {
-  font-size: 15px;
-  line-height: 1.5;
+.single-tag .tag-text {
+  font-size: $--font-size-tag;
+  line-height: $--line-height-tag;
   margin: 0 10px;
-  text-align: left;
-  color: hsl(0, 0%, 20%);
+  text-align: $--text-align-l;
+  color: $--font-color;
+  font-family: $--font-family-p;
 }

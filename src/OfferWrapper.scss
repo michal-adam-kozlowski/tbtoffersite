@@ -1,15 +1,19 @@
 $--font-primary: sofia-pro, sans-serif;
 $--font-weight-n: normal;
 $--font-size-h1: 50px;
+$--font-style-n: normal;
+
 
 
 body {
   font-family: $--font-primary;
   font-weight: $--font-weight-n;
+  margin: 0;
+  padding: 0;
 }
 
 .hero-title {
   font-size: $--font-size-h1;
   font-weight: $--font-weight-n;
-  font-style: normal;
+  font-style: $--font-style-n
 }
