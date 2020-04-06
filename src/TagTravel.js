@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import './Tag.scss';
+import './TagTravel.scss';
 
 
-class Tag extends Component {
+class TagTravel extends Component {
 
     render () {
 
-        return <div className="single-tag">
+        return <div className="single-tag-travel">
          <img src={this.props.singleTag.image} alt={"tag"} />
          <div className="tag-text-box">
          <p className="tag-title">{this.props.singleTag.tagTitle}</p>
@@ -18,4 +18,4 @@ class Tag extends Component {
 
 
 
-export default Tag;
+export default TagTravel;

@@ -7,6 +7,8 @@ $--font-size-p: 16px;
 $--margin-rwd: 0 40px 50px;
 $--line-height-text: 1.8;
 $--text-align-l: left;
+$--text-justify: justify;
+
 
 
 
@@ -23,12 +25,18 @@ $--text-align-l: left;
 .short-info-text {
   font-family: $--font-family-p;
   line-height: $--line-height-text;
-  text-align: $--text-align-l;
+  text-align: $--text-justify;
   font-size: $--font-size-p;
 }
 
 @media only screen and (max-width: 767px) {
   .short-info-component {
-    margin: $--margin-rwd;
+    width: 100%;
+    margin-left: 0;
   }
+
+  .short-info-text {
+    text-align: $--text-align-l;
+  }
+
 }

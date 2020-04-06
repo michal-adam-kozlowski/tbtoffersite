@@ -8,12 +8,23 @@ $--font-style-n: normal;
 body {
   font-family: $--font-primary;
   font-weight: $--font-weight-n;
-  margin: 0;
-  padding: 0;
 }
 
 .hero-title {
   font-size: $--font-size-h1;
   font-weight: $--font-weight-n;
   font-style: $--font-style-n
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#content {
+    min-height: 500px;
+    box-sizing: border-box;
+
 }

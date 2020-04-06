@@ -24,7 +24,14 @@ $--font-weight: 600;
 }
 
 
-.single-tag img {
+.single-tag-travel {
+  display: flex;
+  margin-bottom: 20px;
+  width: 400px;
+  max-width: 90vw;
+}
+
+.single-tag-travel img {
  width: 40px;
  height: 40px;
  margin-right: 20px;
@@ -46,7 +53,7 @@ $--font-weight: 600;
 
 
 @media only screen and (max-width: 767px) {
-  .single-tag {
+  .single-tag-travel {
     width: 100%;
   }
 }

@@ -12,14 +12,16 @@ import './Hero.scss';
 
 function OfferWrapper() {
     return (
-        <div>
+        <div id="content">
             <Hero/>
+            <div className="container">
             <CruiseName/>
             <ShortInfo/>
             <HighLights/>
             <Map/>
             <Reservation/>
             <Testimonials/>
+        </div>
         </div>
     );
 }
