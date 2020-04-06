@@ -5,7 +5,7 @@ import './Hero.scss';
 class Hero extends React.Component {
 
   state = {
-    destination: ["Czarnogóra", "Chorwacja",  "Baleary", "Grecja"]
+    destination: ["Czarnogóra", "Chorwacja", "Baleary", "Grecja"]
   }
 
   render() {
