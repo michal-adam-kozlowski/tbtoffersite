@@ -3,15 +3,13 @@ import Tag from './Tag.js';
 import './ShortInfo.scss';
 
 
-
-
 class ShortInfo extends React.Component {
   render() {
   const taginfo = [
-  {name: "Flota", text: "Rejs, na którym pływamy flotą jachtów!", image: require("./img/icons/flotajachtow.png")},
-  {name: "Imprezy", text: "Rejs, na którym imprez nie zabraknie!", image: require("./img/icons/imprezy.png")},
-  {name: "Zabytki", text: "Rejs, na którym odwiedzimy wiele pięknych i zabytkowych miast!", image: require("./img/icons/zabytkowemiasta.png")},
-  {name: "Snorkeling", text: "Rejs, gdzie nie zabraknie okazji do świetnego snorkelingu!", image: require("./img/icons/snorkeling.png")}
+  {name: "Flota", text: "Rejs, na którym pływamy flotą jachtów!", image: require("./img/icons/boat-icon.png")},
+  {name: "Imprezy", text: "Rejs, na którym imprez nie zabraknie!", image: require("./img/icons/party-icon.png")},
+  {name: "Zabytki", text: "Rejs, na którym odwiedzimy wiele pięknych i zabytkowych miast!", image: require("./img/icons/sightseeing-icon.png")},
+  {name: "Snorkeling", text: "Rejs, gdzie nie zabraknie okazji do świetnego snorkelingu!", image: require("./img/icons/snorkeling-icon.png")}
 ]
 
     return (
