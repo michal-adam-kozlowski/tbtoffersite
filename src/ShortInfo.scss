@@ -12,14 +12,33 @@ $--text-justify: justify;
 
 .short-info-component {
   margin-left: 50px;
-  width: 70%;
+  width: 90%;
   margin-bottom: 50px;
   margin-top: 40px;
   color: $--font-color;
 }
 
+.short-info {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+.short-info-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  padding-top: 10px;
+}
+
 .short-info-box h2 {
   font-size: $--font-size-h2;
+}
+
+.travel-info-title {
+  padding-left: 20px;
+  margin-bottom: 0;
 }
 
 .short-info-text {
@@ -35,8 +54,17 @@ $--text-justify: justify;
     margin-left: 0;
   }
 
+  .short-info {
+    flex-direction: column;
+  
+  }
+
   .short-info-text {
     text-align: $--text-align-l;
+  }
+
+  .short-info-box {
+    width: 100%;
   }
 
 }

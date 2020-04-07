@@ -46,19 +46,19 @@ export default function TabsMenu() {
       <Tabs>
         <div title="Jacht">
         <div className="tab-image"><img src={yacht} alt={yacht}/></div>
-        <div className="tab-text"><p>Jeżeli jesteście ekipą 7-12 osób, wystarczy że skorzystasz z opcji <span style={{fontWeight: 600}}>rezerwuj cały jacht</span> - wybierasz interesujący Was jacht i podajesz skład Twojej załogi! Nie musicie mieć pojęcia o żeglowaniu - przydzielimy Wam skippera, który wszystkim się zajmie!
+        <div className="tab-text"><h3>Jacht (7-12 osób)</h3><p>Wybierasz interesujący Was jacht i podajesz skład Twojej załogi! Nie musicie mieć pojęcia o żeglowaniu - przydzielimy Wam skippera, który wszystkim się zajmie!
            I w sumie to najlepsze co możecie zrobić! Dlaczego? Bo jedziecie całą paczką znajomych, bo wybieracie konkretny jacht jaki chcecie (zamiast ogólnej
            Klasy) i ponieważ oszczędzacie do 120 PLN/os. w stosunku do zapisów indywidualnych.</p></div>
         </div>
         <div title="Kabina">
         <div className="tab-image"><img src={yacht} alt={yacht}/></div>
-        <div className="tab-text"><p>Jeżeli jest was dwoje/dwóch/dwie i zależy Wam na gwarancji zakwaterowania w zamykanej kabinie z podwójnym łóżkiem, skorzystaj z opcji <span style={{fontWeight: 600}}>rezerwuj miejsce na jachcie lub kabinę</span>, wybierz Klasę Jachtu, kliknij Rezerwuj i następnie zaznacz "Kabina 2- osobowa". W kolejnym kroku podaj swoje dane i dane osoby towarzyszącej* i witamy na pokładzie!</p></div>
+        <div className="tab-text"><h3>Kabina (2 osoby)</h3><p>Jeżeli jest was dwoje/dwóch/dwie i zależy Wam na gwarancji zakwaterowania w zamykanej kabinie z podwójnym łóżkiem, skorzystaj z opcji <span style={{fontWeight: 600}}>rezerwuj miejsce na jachcie lub kabinę</span>, wybierz Klasę Jachtu, kliknij Rezerwuj i następnie zaznacz "Kabina 2- osobowa". W kolejnym kroku podaj swoje dane i dane osoby towarzyszącej* i witamy na pokładzie!</p></div>
         </div>
         <div title="Solo">
         <div className="tab-image"><img src={yacht} alt={yacht}/>
 
   </div>
-        <div className="tab-text"><p>Jeżeli chcesz zapisać na rejs tylko siebie (albo siebie i kilku znajomych) skorzystaj z opcji <span style={{fontWeight: 600}}>rezerwuj miejsce na jachcie lub kabinę</span>, wybierz Klasę Jachtu, kliknij Rezerwuj i następnie zaznacz ile osób chcesz zgłosić. W kolejnym kroku podaj dane swoje i wszystkich zgłaszanych przez Ciebie osób i już! Witamy na pokładzie!</p></div>
+        <div className="tab-text"><h3>Pojedyncze miejsce (1 osoba)</h3><p>Jeżeli chcesz zapisać na rejs tylko siebie (albo siebie i kilku znajomych) skorzystaj z opcji <span style={{fontWeight: 600}}>rezerwuj miejsce na jachcie lub kabinę</span>, wybierz Klasę Jachtu, kliknij Rezerwuj i następnie zaznacz ile osób chcesz zgłosić. W kolejnym kroku podaj dane swoje i wszystkich zgłaszanych przez Ciebie osób i już! Witamy na pokładzie!</p></div>
         </div>
       </Tabs>
     </div>

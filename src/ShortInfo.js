@@ -1,4 +1,5 @@
 import React from 'react';
+import CruiseName from './CruiseName.js';
 import Tag from './Tag.js';
 import TagTravel from './TagTravel.js';
 import './ShortInfo.scss';
@@ -28,9 +29,12 @@ class ShortInfo extends React.Component {
 
     return (
       <div className="short-info-component">
+      <div className="short-info">
+      <CruiseName />
       <div className="short-info-box">
-      <h2 short-info-title>{this.state.titleCroatia}</h2>
+      <h2 className="short-info-title">{this.state.titleCroatia}</h2>
       <p className="short-info-text">{this.state.textCroatia}</p>
+      </div>
       </div>
       <div className="tag-box">
       <Tag singleTag={taginfo[0]}/>
@@ -38,13 +42,13 @@ class ShortInfo extends React.Component {
       <Tag singleTag={taginfo[2]}/>
       <Tag singleTag={taginfo[3]}/>
       </div>
-      <h3 travel-info-title>{this.state.titleTravelInfo}</h3>
+      <h3 className="travel-info-title">Travel Info</h3>
       <div className="tag-box-travel">
       <TagTravel singleTag={travelinfo[0]}/>
       <TagTravel singleTag={travelinfo[1]}/>
+     </div>
+      </div>
 
-      </div>
-      </div>
     )
   }
 }

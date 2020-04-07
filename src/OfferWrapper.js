@@ -15,7 +15,6 @@ function OfferWrapper() {
         <div id="content">
             <Hero/>
             <div className="container">
-            <CruiseName/>
             <ShortInfo/>
             <HighLights/>
             <Map/>

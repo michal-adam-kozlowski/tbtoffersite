@@ -5,22 +5,24 @@ $--line-height-tag: 1.5;
 $--text-align-l: left;
 $--font-weight: 600;
 
-
-
-.tag-box, .tag-box-travel {
+.tag-box {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
   flex-wrap: wrap;
   margin-right: 10px;
-}
+  margin-bottom: 25px;
 
+}
 
 .single-tag {
   display: flex;
   margin-bottom: 20px;
   width: 200px;
   max-width: 90vw;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 

@@ -6,6 +6,12 @@ $--font-weight: 500;
 
 .cruise-name-component {
   margin-left: 50px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90vw;
+  padding-top: 30px;
 }
 
 .cruise-name, .cruise-date, .cruise-type {
@@ -28,7 +34,12 @@ $--font-weight: 500;
 }
 
 @media only screen and (max-width: 767px) {
+
+.cruise-name-box {
+  width: 100%;
+}
 .cruise-name-component {
     margin-left: 0;
+    margin-bottom: 20px;
   }
 }
