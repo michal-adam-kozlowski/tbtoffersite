@@ -1,15 +1,13 @@
-$--font-primary: sofia-pro, sans-serif;
 $--font-weight-n: normal;
 $--font-color: hsl(0, 0%, 20%);
 $--font-style-n: normal;
 $--font-family-p: Poppins,sans-serif;
 $--font-size-p: 16px;
+$--font-size-h2: 20px;
 $--margin-rwd: 0 40px 50px;
 $--line-height-text: 1.8;
 $--text-align-l: left;
 $--text-justify: justify;
-
-
 
 
 .short-info-component {
@@ -20,7 +18,9 @@ $--text-justify: justify;
   color: $--font-color;
 }
 
-.short-info-box {}
+.short-info-box h2 {
+  font-size: $--font-size-h2;
+}
 
 .short-info-text {
   font-family: $--font-family-p;

@@ -2,7 +2,7 @@ $--font-color: hsl(0, 0%, 20%);
 $--font-size-tag: 15px;
 $--line-height-cruise: 1.5;
 $--text-align-l: left;
-$--font-weight-n: normal;
+$--font-weight: 500;
 
 .cruise-name-component {
   margin-left: 50px;
@@ -10,7 +10,7 @@ $--font-weight-n: normal;
 
 .cruise-name, .cruise-date, .cruise-type {
   color: $--font-color;
-  font-weight: $--font-weight-n;
+  font-weight: $--font-weight;
   margin-top: 0;
   font-size: 20px;
   margin-left: 20px;
