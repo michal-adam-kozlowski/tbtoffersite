@@ -2,7 +2,7 @@ import React from 'react';
 import './CruiseName.scss';
 import calendar from './img/icons/calendar.png';
 import croatiaFlag from './img/icons/croatia-flag.png';
-import ship from './img/icons/party.png'
+import party from './img/icons/party.png'
 
 // import Cruise from './CroatiaOffer';
 
@@ -31,7 +31,7 @@ state = {
       <img src={calendar} alt={calendar} /><h3 className="cruise-date">{this.state.cruiseDate[0]}</h3>
       </div>
       <div className="cruise-type-box">
-      <img src={ship} alt={ship} /><h3 className="cruise-type">{this.state.cruiseType[0]}</h3>
+      <img src={party} alt={party} /><h3 className="cruise-type">{this.state.cruiseType[0]}</h3>
       </div>
       </div>)
   };

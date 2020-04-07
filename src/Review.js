@@ -3,7 +3,7 @@ import React from 'react';
 
 function Review(props) {
     return (
-        <span> --Name: {props.number} Rate: {props.stars}-- </span>
+        <div> --Name: {props.number} Rate: {props.stars}-- </div>
     );
 }
 

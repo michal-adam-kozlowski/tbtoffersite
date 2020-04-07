@@ -1,9 +1,21 @@
 import React from 'react';
+import TabsMenu from "./Tabs.js";
 
 
 function Reservation() {
     return (
-        <span> Tu będzie moduł rezerwacji i piękne jachty</span>
+        <div>
+        <center>
+        <span>
+        ---------------------------------------------
+        RESERVATION
+        ---------------------------------------------
+        </span>
+        </center>
+        <TabsMenu />
+        </div>
+
+
     );
 }
 
