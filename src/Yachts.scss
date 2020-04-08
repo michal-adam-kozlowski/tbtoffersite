@@ -1,11 +1,14 @@
-// .tab-content {
-//   padding: 0;
-//   display: block;
-//   background-color: transparent;
-//   border-radius: 10px;
-//   box-shadow: none;
-// }
+#YachtMenu {
+  width: 1000px;
+}
 
+#yacht-tab-indicator-container {
+  margin-bottom: 40px;
+}
+
+.tab-btn:focus, .tab-btn:hover {
+ color: #0088ff;
+}
 
 .class-box {
   display: flex;
@@ -15,8 +18,60 @@
 
 .class-box > div  {
   background-color: white;
-  width: 200px;
-  height: 300px;
+  width: 310px;
+  height: 600px;
   border-radius: 10px;
   box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.12);
+}
+
+.image-yacht img {
+  border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.text-component {
+  padding: 10px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.text-component h4 {
+  font-weight: 500;
+  text-align: left;
+  font-size: 15px;
+  margin: 0;
+}
+
+.text-component h3 {
+text-align: left;
+align-items: baseline;
+margin-bottom: 0;
+color: #0088ff;
+}
+
+.text-component p {
+  font-size: 13px;
+  margin: 0;
+  margin-bottom: 10px;
+  color: #0606068c;
+}
+
+.text-component ul {
+  padding-left: 20px;
+  margin-top: 10px;
+  color:#0606068c;
+}
+
+
+.text-component ul > li {
+  font-size: 13px;
+}
+
+@media only screen  and (max-width: 767px) {
+  .class-box {
+    flex-direction: column;
+    align-items: center;
+  }
 }
