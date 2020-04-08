@@ -40,9 +40,8 @@ const Tabs = props => {
 export default function TabsMenu() {
   return (
     <div className="TabsMenu">
-      <h2>Jak to działa?</h2>
-      <h4>Krok po kroku</h4>
-      <h3><img src={one} alt={one} />Wybierz jedną z opcji rezerwacji na jachcie</h3>
+
+      <h3><img src={two} alt={two} />Wybierz jedną z opcji rezerwacji</h3>
       <Tabs>
         <div title="Jacht">
         <div className="tab-image"><img src={yacht} alt={yacht}/></div>

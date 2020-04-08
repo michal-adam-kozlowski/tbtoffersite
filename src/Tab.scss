@@ -23,6 +23,9 @@ $--font-size: 15px;
 .TabsMenu h3 {
   text-align: center;
   font-weight: $--font-weight-n;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .TabsMenu h4 {
@@ -45,7 +48,9 @@ $--font-size: 15px;
   vertical-align: middle;
   height: 35px;
   margin-right: 10px;
-}
+    width: 35px;
+    margin-bottom: 20px;
+  }
 
 .tabs {
   display: flex;
@@ -86,6 +91,7 @@ $--font-size: 15px;
   display: flex;
   background-color: white;
   border-radius: 10px;
+  box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.12);
 }
 
 .tab-image {
@@ -104,6 +110,10 @@ $--font-size: 15px;
 }
 
 @media only screen and (max-width: 767px) {
+
+
+
+
   .TabsMenu .tab-text h3 {
     text-align: center;
   }

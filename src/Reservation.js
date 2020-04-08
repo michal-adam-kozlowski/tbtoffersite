@@ -1,5 +1,6 @@
 import React from 'react';
 import TabsMenu from "./Tabs.js";
+import YachtClass from "./Yachts.js"
 
 
 function Reservation() {
@@ -12,6 +13,7 @@ function Reservation() {
         ---------------------------------------------
         </span>
         </center>
+        <YachtClass />
         <TabsMenu />
         </div>
 

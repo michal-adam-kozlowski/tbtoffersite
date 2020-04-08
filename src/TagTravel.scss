@@ -9,7 +9,7 @@ $--font-weight: 600;
 
 .tag-box-travel {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-top: 40px;
   flex-wrap: wrap;
   margin-right: 10px;
@@ -24,12 +24,15 @@ $--font-weight: 600;
   background-color: white;
   padding: 10px;
   border-radius: 10px;
+  margin-right: 30px;
+  box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.12);
 }
 
 .single-tag-travel img {
  width: 40px;
  height: 40px;
  margin-right: 20px;
+
 }
 
 .tag-text, .tag-title {
@@ -50,6 +53,10 @@ $--font-weight: 600;
 @media only screen and (max-width: 767px) {
   .single-tag-travel {
     width: 100%;
-    max-width: 80vw;
+    max-width: 85vw;
+  }
+
+  .tag-box-travel {
+    flex-direction: column;
   }
 }

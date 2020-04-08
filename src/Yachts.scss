@@ -1,0 +1,22 @@
+// .tab-content {
+//   padding: 0;
+//   display: block;
+//   background-color: transparent;
+//   border-radius: 10px;
+//   box-shadow: none;
+// }
+
+
+.class-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.class-box > div  {
+  background-color: white;
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.12);
+}
