@@ -50,5 +50,6 @@ $--font-weight: 600;
 @media only screen and (max-width: 767px) {
   .single-tag-travel {
     width: 100%;
+    max-width: 80vw;
   }
 }

@@ -26,10 +26,10 @@ $--text-justify: justify;
 
 .short-info-box {
   background-color: white;
-  padding: 20px;
+  padding: 25px;
   border-radius: 10px;
   width: 60%;
-  padding-top: 10px;
+
 }
 
 .short-info-box h2 {
@@ -54,17 +54,27 @@ $--text-justify: justify;
     margin-left: 0;
   }
 
+  .short-info-box {
+    padding: 0;
+
+  }
+
   .short-info {
     flex-direction: column;
-  
+
   }
 
   .short-info-text {
     text-align: $--text-align-l;
+    padding: 25px;
   }
 
   .short-info-box {
     width: 100%;
+  }
+
+  .short-info-box h2 {
+    padding-left: 25px;
   }
 
 }

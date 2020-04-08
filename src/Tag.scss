@@ -47,7 +47,13 @@ $--font-weight: 600;
 
 
 @media only screen and (max-width: 767px) {
+  .tag-box {
+    flex-direction: column;
+  }
+
   .single-tag {
     width: 100%;
+    max-width: 80vw;
   }
+
 }

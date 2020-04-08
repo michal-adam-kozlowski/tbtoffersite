@@ -1,12 +1,10 @@
-
-
-
 .hero-component {
   background: linear-gradient(-45deg, rgba(71, 71, 72, 0.46), #282c3485), url("./img/cover-photo.jpg") center center/cover no-repeat;
   height: 400px;
   margin: 100px 0 50px 0;
   position: relative;
   background-attachment: fixed;
+  width: 100%;
 }
 
 .hero-title {

@@ -46,9 +46,8 @@ export default function TabsMenu() {
       <Tabs>
         <div title="Jacht">
         <div className="tab-image"><img src={yacht} alt={yacht}/></div>
-        <div className="tab-text"><h3>Jacht (7-12 osób)</h3><p>Wybierasz interesujący Was jacht i podajesz skład Twojej załogi! Nie musicie mieć pojęcia o żeglowaniu - przydzielimy Wam skippera, który wszystkim się zajmie!
-           I w sumie to najlepsze co możecie zrobić! Dlaczego? Bo jedziecie całą paczką znajomych, bo wybieracie konkretny jacht jaki chcecie (zamiast ogólnej
-           Klasy) i ponieważ oszczędzacie do 120 PLN/os. w stosunku do zapisów indywidualnych.</p></div>
+        <div className="tab-text"><h3>Cały jacht (7-12 osób)</h3><p>Jeżeli chcesz zapisać się na rejs z całą swoją ekipią, skorzystaj z opcji <span style={{fontWeight: 600}}>rezerwuj cały jacht</span>. Nie musicie mieć pojęcia o żeglowaniu - przydzielimy Wam skippera, który wszystkim się zajmie.
+           I w sumie to najlepsze co możecie zrobić! Dlaczego? Bo jedziecie całą paczką i oszczędzacie do 120 PLN/os. w stosunku do zapisów indywidualnych.</p></div>
         </div>
         <div title="Kabina">
         <div className="tab-image"><img src={yacht} alt={yacht}/></div>
