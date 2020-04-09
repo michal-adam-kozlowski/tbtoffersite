@@ -34,10 +34,21 @@ $--font-size: 15px;
 
 }
 
+.TabsMenu .tab-text {
+  width: 70%;
+}
+
 .TabsMenu .tab-text h3 {
   text-align: left;
   font-weight: 600;
   font-size: 18px;
+}
+
+.TabsMenu .tab-text h4 {
+  text-align: left;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 10px 0;
 }
 
 .TabsMenu .tab-text p {
@@ -96,13 +107,17 @@ $--font-size: 15px;
 
 .tab-image {
   margin-right: 20px;
-  width: 100%;
+  width: 30%;
   text-align: center;
 }
 
-.tab-image img {
-  width: 200px;
-}
+
+.tab-image .fa, .tab-image .fas {
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 20px;
+    font-size: 120px;
+  }
 
 .tab-text p {
   line-height: 1.8;

@@ -15,15 +15,15 @@ class ShortInfo extends React.Component {
 
   render() {
   const taginfo = [
-  {name: "Flota", tagTitle: "Flota jachtów", text: "Rejs, na którym pływamy flotą jachtów!", image: require("./img/icons/boat-icon.png")},
-  {name: "Imprezy", tagTitle: "Imprezy", text: "Rejs, na którym imprez nie zabraknie!", image: require("./img/icons/music.png")},
-  {name: "Zabytki", tagTitle: "Zwiedzanie", text: "Rejs, na którym odwiedzimy wiele pięknych i zabytkowych miast!", image: require("./img/icons/binoculars .png")},
-  {name: "Snorkeling", tagTitle: "Snorkeling", text: "Rejs, gdzie nie zabraknie okazji do świetnego snorkelingu!", image: require("./img/icons/mask.png")}
+  {name: "Flota", tagTitle: "Flota jachtów", text: "Rejs, na którym pływamy flotą jachtów!", image: require("./img/icons/boat-icon.png"), class: "fas fa-ship"},
+  {name: "Imprezy", tagTitle: "Imprezy", text: "Rejs, na którym imprez nie zabraknie!", image: require("./img/icons/music.png"), class: "fas fa-glass-cheers"},
+  {name: "Zabytki", tagTitle: "Zwiedzanie", text: "Rejs, na którym odwiedzimy wiele pięknych i zabytkowych miast!", image: require("./img/icons/binoculars .png"), class: "fas fa-route"},
+  {name: "Snorkeling", tagTitle: "Snorkeling", text: "Rejs, gdzie nie zabraknie okazji do świetnego snorkelingu!", image: require("./img/icons/mask.png"), class: "fas fa-swimmer"}
 ];
 
   const travelinfo = [
-  {name: "Samolot", tagTitle: "Lot do Zadaru", text: "Z Zadaru do Sukosanu można łatwo dojechać regularnie kursującymi autobusami.", image: require("./img/icons/plane-icon.png")},
-  {name: "Autokar", tagTitle: "Autokar", text: "Możliwy dojazd naszym autokarem. Koszt w dwie strony to 350 PLN/os.", image: require("./img/icons/bus.png")},
+  {name: "Samolot", tagTitle: "Lot do Zadaru", text: "Z Zadaru do Sukosanu można łatwo dojechać regularnie kursującymi autobusami.", image: require("./img/icons/plane-icon.png"), class: "fas fa-plane"},
+  {name: "Autokar", tagTitle: "Autokar", text: "Możliwy dojazd naszym autokarem. Koszt w dwie strony to 350 PLN/os.", image: require("./img/icons/bus.png"), class: "fas fa-bus"},
 ];
 
 

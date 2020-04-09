@@ -28,10 +28,10 @@ state = {
       <img src={croatiaFlag} alt={croatiaFlag} /><h3 className="cruise-name">{this.state.cruiseName[0]}</h3>
       </div>
       <div className="cruise-date-box">
-      <img src={calendar} alt={calendar} /><h3 className="cruise-date">{this.state.cruiseDate[0]}</h3>
+      <i class="far fa-calendar-alt"></i><h3 className="cruise-date">{this.state.cruiseDate[0]}</h3>
       </div>
       <div className="cruise-type-box">
-      <img src={party} alt={party} /><h3 className="cruise-type">{this.state.cruiseType[0]}</h3>
+      <i class="far fa-compass"></i><h3 className="cruise-type">{this.state.cruiseType[0]}</h3>
       </div>
       </div>)
   };
