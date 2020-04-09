@@ -48,8 +48,9 @@ export default function YachtClass(props) {
     name: "Comfort",
     price: 1590,
     person: "8 max 10",
-    year: "2010 lub nowszy",
-    amenities: ["3 lub 4 zamykane kabiny", "rozkładana kanapa dwuosobowa w salonie", "2 łazienki"]
+    year: "2008 - 2010",
+    amenities: ["3 lub 4 zamykane kabiny", "przestronny salon z kuchnią", "2 lub 3 łazienki"],
+    shortInfo: ["Klasa COMFORT zapewnia bardzo dużo wygody, są wyposażone we wszystkie kluczowe i niezbędne elementy - spokojnie zapewnią udane wakacje!"]
   };
 
   const premier = {
@@ -58,16 +59,18 @@ export default function YachtClass(props) {
     price: 1790,
     person: "8 max 10",
     year: "2014 lub nowszy",
-    amenities: ["3 lub 4 zamykane kabiny", "rozkładana kanapa dwuosobowa w salonie", "2 łazienki"]
+    amenities: ["3 lub 4 zamykane kabiny", "przestronny salon z kuchnią", "2 lub 3 łazienki"],
+    shortInfo: "Bardzo dobre jednostki. W rozsądnej cenie oferują sporo udogodnień, nowoczesny design i komfort charakterystyczny dla współcześnie projektowanych jachtów."
   };
 
   const premierPlus = {
     image: require("./img/premier-plus.jpg"),
     name: "Premier +",
     price: 2090,
-    person: "10 max 11",
+    person: "11 max 13",
     year: "2014 lub nowszy",
-    amenities: ["5 zamykanych kabiny", "nie kwaterujemy nikogo w salonie!", "2 łazienki"]
+    amenities: ["5 zamykanych kabin", "przestronny salon z kuchnią", "4-5 łazienek"],
+    shortInfo: "Najlepiej wyposażone i pełne udogodnień. Pamiętajcie, że nikt nie śpi tu w salonie, co diametralnie wpływa na komfort życia."
   };
 
   const katComfort = {
@@ -76,7 +79,8 @@ export default function YachtClass(props) {
     price: "2090 PLN",
     person: "12",
     year: "2014 lub nowszy",
-    amenities: ["4 zamykane kabiny", "2 miejsca do spania w salonie", "4 łazienki"]
+    amenities: ["4 zamykane kabiny", "2 salony (zewnętrzny i wewnętrzny z kuchnią)", "4-5 łazienek", ],
+    shortInfo: "Godne zaufania, sprawdzone i praktyczne katamarany. Są wyposażone we wszystkie kluczowe i niezbędne elementy."
   };
 
   const katPremier = {
@@ -85,7 +89,8 @@ export default function YachtClass(props) {
     price: "2290 PLN",
     person: "12",
     year: "2014 lub nowszy",
-    amenities: ["4 zamykane kabiny", "rozkładana kanapa dwuosobowa w salonie", "4 łazienki", "większa powierzchnia w porównaniu do katamaranów klasy Comfort"]
+    amenities: ["4 zamykane kabiny", "2 salony (zewnętrzny i wewnętrzny z kuchnią)", "4-5 łazienek" ],
+    shortInfo: "Bardzo dobre jednostki, oferują sporo udogodnień i są znacząco większe od katamaranów COMFORT, a pływa na nich ta sama liczba osób. "
   };
 
   // const katPremierPlus = {

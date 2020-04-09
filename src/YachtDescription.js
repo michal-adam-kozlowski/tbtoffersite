@@ -25,6 +25,9 @@ class YachtDescription extends Component {
          <li>{this.props.textComponent.amenities[1]}</li>
          <li>{this.props.textComponent.amenities[2]}</li>
          </ul>
+          <h4>Krótki opis</h4>
+         <p>{this.props.textComponent.shortInfo}</p>
+
          </div>
          </div>
          </div>)
@@ -34,3 +37,5 @@ class YachtDescription extends Component {
 
 
 export default YachtDescription;
+
+ // <li style={{fontWeight: 600}}>{this.props.textComponent.amenities[3]}</li>
