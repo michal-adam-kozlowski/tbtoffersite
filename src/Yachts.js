@@ -107,7 +107,7 @@ export default function YachtClass(props) {
     <div id="YachtMenu" className="TabsMenu">
     <h2>Jak to działa?</h2>
     <h4>Krok po kroku</h4>
-      <h3><img src={one} alt={one} />Wybierz jednostkę a następnie klasę jachtu</h3>
+      <h3><div className="number-box"><p className="number-text">1</p></div>Wybierz jednostkę a następnie klasę jachtu</h3>
       <Tabs>
       <div title="Jacht">
       <div className="class-box">
