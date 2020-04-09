@@ -14,6 +14,7 @@ class ShortInfo extends React.Component {
   }
 
   render() {
+
   const taginfo = [
   {name: "Flota", tagTitle: "Flota jachtów", text: "Rejs, na którym pływamy flotą jachtów!", image: require("./img/icons/boat-icon.png"), class: "fas fa-ship"},
   {name: "Imprezy", tagTitle: "Imprezy", text: "Rejs, na którym imprez nie zabraknie!", image: require("./img/icons/music.png"), class: "fas fa-glass-cheers"},
@@ -28,22 +29,22 @@ class ShortInfo extends React.Component {
 
 
     return (
-      <div className="short-info-component">
-      <div className="short-info">
+      <div className="shortInfoComponent">
+      <div className="shortInfo">
       <CruiseName />
-      <div className="short-info-box">
-      <h2 className="short-info-title">{this.state.titleCroatia}</h2>
-      <p className="short-info-text">{this.state.textCroatia}</p>
+      <div className="shortInfoBox">
+      <h2 className="shortInfoTitle">{this.state.titleCroatia}</h2>
+      <p className="shortInfoText">{this.state.textCroatia}</p>
       </div>
       </div>
-      <div className="tag-box">
+      <div className="tagBox">
       <Tag singleTag={taginfo[0]}/>
       <Tag singleTag={taginfo[1]}/>
       <Tag singleTag={taginfo[2]}/>
       <Tag singleTag={taginfo[3]}/>
       </div>
-      <h3 className="travel-info-title">Travel Info</h3>
-      <div className="tag-box-travel">
+      <h3 className="travelInfoTitle">Travel Info</h3>
+      <div className="tagBoxTravel">
       <TagTravel singleTag={travelinfo[0]}/>
       <TagTravel singleTag={travelinfo[1]}/>
      </div>

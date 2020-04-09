@@ -11,8 +11,8 @@ class Hero extends React.Component {
   render() {
     return (
 
-      <header className="hero-component">
-      <h1 className="hero-title">{this.state.destination[1]}</h1>
+      <header className="heroComponent">
+      <h1 className="heroTitle">{this.state.destination[1]}</h1>
       </header>
    )
   };

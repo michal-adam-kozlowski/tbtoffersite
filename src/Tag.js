@@ -6,12 +6,12 @@ class Tag extends Component {
 
     render () {
 
-        return <div className="single-tag">
+        return <div className="singleTag">
 
          <i class={this.props.singleTag.class}></i>
-         <div className="tag-text-box">
-         <p className="tag-title">{this.props.singleTag.tagTitle}</p>
-         <p className="tag-text">{this.props.singleTag.text} </p>
+         <div className="tagTextBox">
+         <p className="tagTitle">{this.props.singleTag.tagTitle}</p>
+         <p className="tagText">{this.props.singleTag.text} </p>
          </div>
          </div>
     }

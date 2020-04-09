@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./Tabs.js";
-import "./Tab.scss";
-import "./Yachts.scss";
+import "./BookOptions.js";
+import "./BookOptions.scss";
+import "./YachtSelection.scss";
 import YachtDescription from "./YachtDescription.js";
 import one from "./img/icons/one.png";
 import two from "./img/icons/two.png";
@@ -17,7 +17,7 @@ const Tabs = props => {
       <div className="tabs">
         {props.children.map((tab, i) => (
           <button
-            className="tab-btn"
+            className="tabBtn"
             onClick={() => {
               setActiveTabIndex(i);
             }}
@@ -27,16 +27,16 @@ const Tabs = props => {
           </button>
         ))}
       </div>
-      <div id="yacht-tab-indicator-container" className="tab-indicator-container">
+      <div id="yachtTabIndicatorContainer" className="tabIndicatorContainer">
         <div
-          className="tab-indicator"
+          className="tabIndicator"
            style={{
              width: 100 / props.children.length + "%",
              transform: `translateX(${activeTabIndex * 100}%)`
            }}
         />
       </div>
-      <div className="tab-content-yachts">{activeTab.props.children}</div>
+      <div className="tabContentYachts">{activeTab.props.children}</div>
     </div>
   );
 };
@@ -104,13 +104,13 @@ export default function YachtClass(props) {
 
   return (
 
-    <div id="YachtMenu" className="TabsMenu">
+    <div id="yachtMenu" className="tabsMenu">
     <h2>Jak to działa?</h2>
     <h4>Krok po kroku</h4>
-      <h3><div className="number-box"><p className="number-text">1</p></div>Wybierz jednostkę a następnie klasę jachtu</h3>
+      <h3><div className="numberBox"><p className="numberText">1</p></div>Wybierz jednostkę a następnie klasę jachtu</h3>
       <Tabs>
       <div title="Jacht">
-      <div className="class-box">
+      <div className="classBox">
       <YachtDescription textComponent={comfort}/>
       <YachtDescription textComponent={premier}/>
       <YachtDescription textComponent={premierPlus}/>
@@ -118,7 +118,7 @@ export default function YachtClass(props) {
       </div>
       </div>
       <div title="Katamaran">
-      <div className="class-box" style={{justifyContent: "space-evenly"}}>
+      <div className="classBox" style={{justifyContent: "space-evenly"}}>
       <YachtDescription textComponent={katComfort}/>
       <YachtDescription textComponent={katPremier}/>
 

@@ -1,79 +1,65 @@
-$--font-weight-n: normal;
-$--font-color: hsl(0, 0%, 20%);
-$--font-style-n: normal;
-$--font-family-p: Poppins,sans-serif;
-$--font-size-p: 16px;
-$--font-size-h2: 20px;
-$--margin-rwd: 0 40px 50px;
-$--line-height-text: 1.8;
-$--text-align-l: left;
-$--text-justify: justify;
+$--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.12);
 
-
-.short-info-component {
+.shortInfoComponent {
   margin: auto;
   width: 90%;
   margin-bottom: 50px;
   margin-top: 40px;
-  color: $--font-color;
 }
 
-.short-info {
+.shortInfo {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
 }
 
-.short-info-box {
+.shortInfoBox {
   background-color: white;
   padding: 25px;
   border-radius: 10px;
   width: 60%;
-  box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.12);
+  box-shadow: $--box-shadow;
 }
 
-.short-info-box h2 {
-  font-size: $--font-size-h2;
+.shortInfoBox h2 {
+  font-size: 20px;
 }
 
-.travel-info-title {
+.travelInfoTitle {
   padding-left: 20px;
   margin-bottom: 0;
 }
 
-.short-info-text {
-  font-family: $--font-family-p;
-  line-height: $--line-height-text;
-  text-align: $--text-justify;
-  font-size: $--font-size-p;
+.shortInfoText {
+  line-height: 1.8;
+  text-align: justify;
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 767px) {
-  .short-info-component {
+  .shortInfoComponent {
     width: 100%;
     margin-left: 0;
   }
 
-  .short-info-box {
+  .shortInfoBox {
     padding: 0;
-
   }
 
-  .short-info {
+  .shortInfo {
     flex-direction: column;
-
   }
 
-  .short-info-text {
-    text-align: $--text-align-l;
+  .shortInfoText {
+    text-align: left;
     padding: 25px;
   }
 
-  .short-info-box {
+  .shortInfoBox {
     width: 100%;
   }
 
-  .short-info-box h2 {
+  .shortInfoBox h2 {
     padding-left: 25px;
   }
 

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "./Tab.scss";
-import "./Yachts.scss";
+import "./BookOptions.scss";
+import "./YachtSelection.scss";
 
 
 class YachtDescription extends Component {
@@ -9,10 +9,10 @@ class YachtDescription extends Component {
 
         return (
 
-         <div className="class-box">
+         <div className="classBox">
          <div>
-         <div className="image-yacht"><img src={(this.props.textComponent.image)} alt={("this.props.firstGap.name")} /></div>
-         <div className="text-component">
+         <div className="imageYacht"><img src={(this.props.textComponent.image)} alt={("")} /></div>
+         <div className="textComponent">
          <h3>{this.props.textComponent.name}</h3>
          <p>{this.props.textComponent.price}/osoba</p>
          <h4>Liczba miejsc</h4>
@@ -27,7 +27,6 @@ class YachtDescription extends Component {
          </ul>
           <h4>Krótki opis</h4>
          <p>{this.props.textComponent.shortInfo}</p>
-
          </div>
          </div>
          </div>)

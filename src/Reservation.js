@@ -1,6 +1,6 @@
 import React from 'react';
-import TabsMenu from "./Tabs.js";
-import YachtClass from "./Yachts.js"
+import TabsMenu from "./BookOptions.js";
+import YachtClass from "./YachtSelection.js"
 
 
 function Reservation() {

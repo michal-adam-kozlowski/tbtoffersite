@@ -1,21 +1,15 @@
-$--font-color: hsl(0, 0%, 20%);
-$--font-family-p: Poppins,sans-serif;
-$--font-size-tag: 15px;
-$--line-height-tag: 1.5;
-$--text-align-l: left;
-$--font-weight: 600;
+$--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.12);
 
-.tag-box {
+.tagBox {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
   flex-wrap: wrap;
   margin-right: 10px;
   margin-bottom: 25px;
-
 }
 
-.single-tag {
+.singleTag {
   display: flex;
   margin-bottom: 20px;
   width: 200px;
@@ -23,41 +17,37 @@ $--font-weight: 600;
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.12);
+  box-shadow: $--box-shadow;
 }
 
-.single-tag .fa,.single-tag .fas {
+.singleTag .fa,.singleTag .fas {
   font-size: 30px;
   margin-right: 10px;
 }
 
-
-.single-tag img {
- height: 35px;
- margin-right: 20px;
+.singleTag img {
+  height: 35px;
+  margin-right: 20px;
 }
 
-.tag-text, .tag-title {
-  font-size: $--font-size-tag;
-  line-height: $--line-height-tag;
+.tagText, .tagTitle {
+  font-size: 15px;
+  line-height: 1.5;
   margin: 0 10px;
-  text-align: $--text-align-l;
-  color: $--font-color;
-  font-family: $--font-family-p;
+  text-align: left;
 }
 
-.tag-title {
-  font-weight: $--font-weight;
+.tagTitle {
+  font-weight: 600;
   margin-bottom: 5px;
 }
 
-
 @media only screen and (max-width: 767px) {
-  .tag-box {
+  .tagBox {
     flex-direction: column;
   }
 
-  .single-tag {
+  .singleTag {
     width: 100%;
     max-width: 80vw;
   }

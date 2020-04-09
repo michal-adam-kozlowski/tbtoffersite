@@ -1,8 +1,4 @@
-$--font-color: hsl(0, 0%, 20%);
-$--font-size-tag: 15px;
-$--line-height-cruise: 1.5;
-$--text-align-l: left;
-$--font-weight: 500;
+$--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.12);
 
 .cruise-name-component {
   margin-left: 30px;
@@ -12,16 +8,15 @@ $--font-weight: 500;
   width: 400px;
   max-width: 80vw;
   padding-top: 30px;
-  box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.12);
+  box-shadow: $--box-shadow;
 }
 
 .cruise-name, .cruise-date, .cruise-type {
-  color: $--font-color;
-  font-weight: $--font-weight;
+  font-weight: 500;
   margin-top: 0;
   font-size: 20px;
   margin-left: 20px;
-  line-height: $--line-height-cruise;
+  line-height: 1.5;
 }
 
 .cruise-name-box, .cruise-date-box, .cruise-type-box {
@@ -35,16 +30,15 @@ $--font-weight: 500;
 }
 
 .far {
-      font-size: 30px;
+  font-size: 30px;
 }
 
 @media only screen and (max-width: 767px) {
-
 .cruise-name-box {
   width: 100%;
 }
 .cruise-name-component {
-    margin-left: 0;
-    margin-bottom: 20px;
+  margin-left: 0;
+  margin-bottom: 20px;
   }
 }
