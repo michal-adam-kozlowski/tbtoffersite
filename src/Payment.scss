@@ -1,0 +1,17 @@
+$--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.12);
+
+
+.paymentComponent {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.paymentComponent > div {
+  width: 40%;
+
+  padding: 20px;
+}
+.wykres {
+box-shadow: $--box-shadow;
+border-radius: 10px;
+}

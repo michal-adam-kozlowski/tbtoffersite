@@ -1,0 +1,42 @@
+#accordion{
+   margin-top: 20px;
+}
+
+.tab{
+
+  .title {
+    padding: 30px 30px;
+    cursor: pointer;
+    transform: translate3d(0, 0, 0);
+    position: relative;
+    font-size: 20px;
+    margin-bottom: -1px;
+    text-align: left;
+  }
+
+
+  .content{
+    max-height: 100%;
+    transition: .5s;
+    margin: 0;
+    padding-left: 40px;
+    border-top: 0;
+  }
+}
+
+.flex{
+  display:flex;
+}
+
+.show{
+  display: block;
+  transition: .5s;
+}
+
+.hide{
+  display:none;
+}
+
+.jc-btwn{
+  justify-content: space-between;
+}
