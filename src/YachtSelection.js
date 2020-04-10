@@ -3,6 +3,7 @@ import "./BookOptions.js";
 import "./BookOptions.scss";
 import "./YachtSelection.scss";
 import YachtDescription from "./YachtDescription.js";
+import PopUpContent from "./PopUpContent.js";
 import one from "./img/icons/one.png";
 import two from "./img/icons/two.png";
 
@@ -112,7 +113,7 @@ export default function YachtClass(props) {
       <div title="Jacht">
       <div className="classBox">
       <YachtDescription textComponent={comfort}/>
-      <YachtDescription textComponent={premier}/>
+      <YachtDescription textComponent={premier} />
       <YachtDescription textComponent={premierPlus}/>
 
       </div>
