@@ -3,9 +3,8 @@ import "./BookOptions.js";
 import "./BookOptions.scss";
 import "./YachtSelection.scss";
 import YachtDescription from "./YachtDescription.js";
-import PopUpContent from "./PopUpContent.js"
-
-
+import PopUpContent from "./PopUpContent.js";
+import imageComfort from './img/comfort.jpg';
 
 
 const Tabs = props => {
@@ -50,7 +49,8 @@ export default function YachtClass(props) {
     person: "8 max 10",
     year: "2008 - 2010",
     amenities: ["3 lub 4 zamykane kabiny", "przestronny salon z kuchnią", "2 lub 3 łazienki"],
-    shortInfo: ["Klasa COMFORT zapewnia bardzo dużo wygody, są wyposażone we wszystkie kluczowe i niezbędne elementy - spokojnie zapewnią udane wakacje!"]
+    info: "To podstawowa klasa jachtów w naszej ofercie, rezerwując tutaj miejsce zostaniecie zakwaterowani na wygodnym jachcie 8-10 osobowym (długość kadłuba od 40 do 46 stóp ~ 12-14m), około 10-12 letnim. Przykładowe jednostki w tej klasie to Sun Odyssey 439, Oceanis 43 lub Bavaria 44. Jeśli jacht jest 8-osobowy, standardowy układ do spania to 3 zamykany kabiny dwuosobowe + rozkładana kanapa dwuosobowa w salonie i 2 łazienki. Jeśli jacht jest 10-osobowy, standardowy układ do spania to 3 zamykane kabiny dwuosobowe + czwarta zamykana kabina z łóżkiem piętrowym + rozkładana kanapa dwuosobowa w salonie. Na poglądowych zdjęciach powyżej przedstawiamy przykładowy jacht klasy COMFORT - widok z zewnątrz, kajuty, salon i standardowy rozkład miejsc do spania.",
+    gallery: [<img src={imageComfort} alt="" />, <img src={imageComfort} alt="" />, <img src={imageComfort} alt="" />, <img src={imageComfort} alt="" />]
   };
 
   const premier = {
@@ -112,16 +112,16 @@ export default function YachtClass(props) {
       <Tabs>
       <div title="Jacht">
       <div className="classBox">
-      <div><YachtDescription textComponent={comfort}/> <PopUpContent text={comfort}/></div>
-      <div><YachtDescription textComponent={premier} /> <PopUpContent text={premier}/> </div>
-      <div><YachtDescription textComponent={premierPlus}/> <PopUpContent text={premierPlus}/> </div>
+      <div><YachtDescription textComponent={comfort}/> <PopUpContent content={comfort}/></div>
+      <div><YachtDescription textComponent={premier} /> <PopUpContent content={premier}/> </div>
+      <div><YachtDescription textComponent={premierPlus}/> <PopUpContent content={premierPlus}/> </div>
 
       </div>
       </div>
       <div title="Katamaran">
       <div className="classBox" style={{justifyContent: "space-evenly"}}>
-      <div><YachtDescription textComponent={katComfort}/> <PopUpContent text={katComfort}/> </div>
-      <div><YachtDescription textComponent={katPremier}/> <PopUpContent text={katPremier}/> </div>
+      <div><YachtDescription textComponent={katComfort}/> <PopUpContent content={katComfort}/> </div>
+      <div><YachtDescription textComponent={katPremier}/> <PopUpContent content={katPremier}/> </div>
 
 
       </div>

@@ -10,9 +10,7 @@ function Reservation() {
         <div>
         <center>
         <span>
-        ---------------------------------------------
         RESERVATION
-        ---------------------------------------------
         </span>
         </center>
         <YachtClass />

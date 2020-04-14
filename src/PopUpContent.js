@@ -25,7 +25,7 @@ return (
 <div className="popUpContent">
 <div className="popUpBox" onClick={this.togglePopup.bind(this)}></div>
 
-{this.state.showPopup ? <Popup text={this.props.text} closePopup={this.togglePopup.bind(this)}/> : null}
+{this.state.showPopup ? <Popup content={this.props.content} closePopup={this.togglePopup.bind(this)}/> : null}
 </div>
 
 );
