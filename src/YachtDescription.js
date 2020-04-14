@@ -2,15 +2,15 @@ import React, { Component } from "react";
 import "./BookOptions.scss";
 import "./YachtSelection.scss";
 import PopUpContent from "./PopUpContent.js"
-import Popup from './PopUp.js';
 import "./PopUp.scss";
 
 
 class YachtDescription extends Component {
     render () {
+  
         return (
          <div className="classBoxSingle">
-         <PopUpContent/>
+         <PopUpContent />
          <div className="imageYacht"><img src={(this.props.textComponent.image)} alt={("")} /></div>
          <div className="textComponent">
          <h3>{this.props.textComponent.name}</h3>
@@ -25,8 +25,6 @@ class YachtDescription extends Component {
          <li>{this.props.textComponent.amenities[1]}</li>
          <li>{this.props.textComponent.amenities[2]}</li>
          </ul>
-          <h4>Krótki opis</h4>
-         <p>{this.props.textComponent.shortInfo}</p>
          </div>
          </div>
         )

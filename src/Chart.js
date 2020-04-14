@@ -8,15 +8,15 @@ class Chart extends React.Component {
       <div className="chart"></div>
    <ul className="key">
     <li>
-    <strong className="percent blue">30%</strong>
+    <strong className="percent lightblue">30%</strong>
     <span className="choice">do 24 godzin</span>
     </li>
   <li>
-    <strong className="percent pink">30%</strong>
+    <strong className="percent blue">30%</strong>
     <span className="choice">60 dni przed rejsem</span>
   </li>
   <li>
-    <strong className="percent green">40%</strong>
+    <strong className="percent shell">40%</strong>
     <span className="choice">30 dni przed rejsem</span>
   </li>
 

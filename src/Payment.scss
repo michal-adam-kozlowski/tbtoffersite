@@ -1,7 +1,8 @@
-$--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.12);
+$--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
 
 .paymentComponent {
-    margin: 100px auto;
+  margin: 100px auto;
+  width: 90%;
 
   h3 {
     text-align: center;
@@ -15,7 +16,7 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.12);
 
 .paymentContent {
   display: flex;
-  justify-content: space-evenly;
+  justify-content:  space-between;
   height: 350px;
 }
 
@@ -26,7 +27,7 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.12);
 
 .paymentContent > div:last-Child {
   padding: 0;
-  width: 50%;
+  width: 55%;
 }
 
 .chartBox {
@@ -38,12 +39,8 @@ border-radius: 10px;
 @media only screen and (max-width: 767px) {
   .paymentContent {
     flex-direction: column;
-  }
-
-  .paymentContent {
     height: auto;
   }
-
 
   .paymentContent > div{
     width: auto;
@@ -58,4 +55,10 @@ border-radius: 10px;
     width: 90%;
   }
 
+}
+
+@media only screen and (max-width: 1250px) {
+  .paymentContent > div{
+    width: auto;
+  }
 }

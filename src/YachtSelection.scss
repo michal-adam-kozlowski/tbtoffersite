@@ -1,6 +1,6 @@
-$--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.12);
-$--tab-color-blue: #0088ff;
-$--tab-p-color-grey: #0606068c;
+$--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
+$--tab-color-blue: #114173;
+$--tab-p-color-grey: #060606a1;
 
 #yachtMenu {
   width: 1000px;
@@ -13,6 +13,7 @@ $--tab-p-color-grey: #0606068c;
 
 .tabBtn:focus, .tabBtn:hover {
  color: $--tab-color-blue;
+ font-weight: 600;
 }
 
 .classBox {
@@ -23,10 +24,14 @@ $--tab-p-color-grey: #0606068c;
 .classBox > div  {
   background-color: white;
   width: 310px;
-  height: 675px;
+  height: 100%;
   border-radius: 10px;
   box-shadow: $--box-shadow;
   position: relative;
+}
+
+.classBox > div:hover {
+  box-shadow: 0px 2px 46px -18px rgba(0,0,0,0.85);
 }
 
 .imageYacht img {
@@ -45,7 +50,7 @@ $--tab-p-color-grey: #0606068c;
 .textComponent h4 {
   font-weight: 500;
   text-align: left;
-  font-size: 15px;
+  font-size: 17px;
   margin: 0;
 }
 
@@ -54,10 +59,11 @@ text-align: left;
 align-items: baseline;
 margin-bottom: 0;
 color: $--tab-color-blue;
+font-weight: 600;
 }
 
 .textComponent p {
-  font-size: 13px;
+  font-size: 14px;
   margin: 0;
   margin-bottom: 10px;
   color: $--tab-p-color-grey;
@@ -67,11 +73,11 @@ color: $--tab-color-blue;
   padding-left: 0;
   margin-top: 10px;
   color: $--tab-p-color-grey;
-  list-style-type: none;
 }
 
 .textComponent ul > li {
-  font-size: 13px;
+  font-size: 14px;
+  margin-left: 20px;
 }
 
 @media only screen  and (max-width: 767px) {

@@ -1,6 +1,5 @@
 import React from 'react';
 import Hero from './Hero.js';
-import CruiseName from './CruiseName.js';
 import ShortInfo from './ShortInfo.js';
 import HighLights from "./HighLights.js";
 import Map from "./Map.js";

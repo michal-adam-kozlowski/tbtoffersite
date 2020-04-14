@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import YachtDescription from './YachtDescription.js';
 import Popup from './PopUp.js';
 import "./PopUp.scss";
+// import PopupDescription from './PopupDescription.js'
+
 
 
 class PopUpContent extends Component {
+
 
   constructor(props){
 super(props);
@@ -17,18 +19,13 @@ this.setState({
 });
  }
 
-  render() {
+  render(props) {
+
 return (
 <div className="popUpContent">
 <div className="popUpBox" onClick={this.togglePopup.bind(this)}></div>
 
-{this.state.showPopup ?
-<Popup
-          text='jakiś tekst'
-          closePopup={this.togglePopup.bind(this)}
-/>
-: null
-}
+{this.state.showPopup ? <Popup text={this.props.text} closePopup={this.togglePopup.bind(this)}/> : null}
 </div>
 
 );

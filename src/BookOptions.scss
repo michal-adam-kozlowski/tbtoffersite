@@ -1,6 +1,6 @@
-$--font-color-blue: hsl(208, 100%, 50%);
+$--font-color-blue: #114173;
 $--bg-color-grey: #333333;
-$--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.12);
+$--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
 
 
 .tabsMenu {
@@ -14,7 +14,7 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.12);
   font-size: 20px;
   margin-bottom: 0;
   color: $--font-color-blue;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .tabsMenu h3 {
@@ -89,14 +89,14 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.12);
   background: transparent;
   outline: none;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
 }
 
 .tabIndicatorContainer {
   display: flex;
   margin: auto;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   width: 50%;
 }
 

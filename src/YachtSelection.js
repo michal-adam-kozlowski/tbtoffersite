@@ -3,9 +3,8 @@ import "./BookOptions.js";
 import "./BookOptions.scss";
 import "./YachtSelection.scss";
 import YachtDescription from "./YachtDescription.js";
-import PopUpContent from "./PopUpContent.js";
-import one from "./img/icons/one.png";
-import two from "./img/icons/two.png";
+import PopUpContent from "./PopUpContent.js"
+
 
 
 
@@ -94,6 +93,7 @@ export default function YachtClass(props) {
     shortInfo: "Bardzo dobre jednostki, oferują sporo udogodnień i są znacząco większe od katamaranów COMFORT, a pływa na nich ta sama liczba osób. "
   };
 
+
   // const katPremierPlus = {
   //   image: require("./img/kat-premier-plus.jpg"),
   //   name: "Premier +",
@@ -112,16 +112,16 @@ export default function YachtClass(props) {
       <Tabs>
       <div title="Jacht">
       <div className="classBox">
-      <YachtDescription textComponent={comfort}/>
-      <YachtDescription textComponent={premier} />
-      <YachtDescription textComponent={premierPlus}/>
+      <div><YachtDescription textComponent={comfort}/> <PopUpContent text={comfort}/></div>
+      <div><YachtDescription textComponent={premier} /> <PopUpContent text={premier}/> </div>
+      <div><YachtDescription textComponent={premierPlus}/> <PopUpContent text={premierPlus}/> </div>
 
       </div>
       </div>
       <div title="Katamaran">
       <div className="classBox" style={{justifyContent: "space-evenly"}}>
-      <YachtDescription textComponent={katComfort}/>
-      <YachtDescription textComponent={katPremier}/>
+      <div><YachtDescription textComponent={katComfort}/> <PopUpContent text={katComfort}/> </div>
+      <div><YachtDescription textComponent={katPremier}/> <PopUpContent text={katPremier}/> </div>
 
 
       </div>

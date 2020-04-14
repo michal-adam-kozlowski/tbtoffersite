@@ -9,6 +9,7 @@ $shell: #84abd4;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .chart {
@@ -48,19 +49,19 @@ $shell: #84abd4;
   padding-left: 10px;
 }
 
-.pink {
+.blue {
   background: $blue;
 }
-.blue {
+.lightblue {
   background: $lightblue;
 }
-.green {
+.shell {
   background: $shell;
 }
 
-
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1250px) {
   .chartComponent {
-    flex-direction: column;}
-
+    justify-content: center;
+    flex-direction: column;
+  }
 }

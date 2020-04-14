@@ -1,9 +1,5 @@
 import React, { useState } from "react";
 import "./BookOptions.scss";
-import one from "./img/icons/one.png";
-import two from "./img/icons/two.png";
-import three from "./img/icons/three.png";
-import yacht from "./img/icons/boat-2.png";
 
 const Tabs = props => {
   const [activeTabIndex, setActiveTabIndex] = useState(0);

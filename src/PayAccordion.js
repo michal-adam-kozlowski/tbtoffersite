@@ -35,8 +35,8 @@ class Accordion extends React.Component {
   updateTabs(id){
   	let tabs  = this.state.tabs;
     let newtabs = tabs.map((tab, index)=>{
-      if(tab.id == id){
-        if(tab.active == true){
+      if(tab.id === id){
+        if(tab.active === true){
         	tab.active = false;
         }else{
         	tab.active = true;
