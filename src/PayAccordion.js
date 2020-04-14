@@ -9,22 +9,22 @@ class Accordion extends React.Component {
     	tabs: [
       	{
         	id: 1,
-          title: "do 24h",
+          title: "I rata - do 24 godzin od złożenia rezerwacji",
           content: "W ciągu 24 godzin od złożenia rezerwacji należy wpłacić zaliczkę wysokości 30%* całej ceny wycieczki. Wpłata zaliczki stanowi potwierdzenie rezerwacji. W przypadku niewpłacenia zaliczki rezerwacja zostanie anulowana. W okresie promocji First Minute zaliczka wynosi tylko 200 PLN.",
           active: false
         },
 
         {
         	id: 2,
-          title: "60 dni przed rejsem",
+          title: "II rata - 60 dni przed rejsem",
           content: "Najpóźniej 60 dni przed wyjazdem należy dopłacić drugie 30% ceny.",
           active: false
         },
         {
         	id: 3,
-          title: "30 dni przed rejsem",
+          title: "III rata - 30 dni przed rejsem",
           content: "Najpóźniej 30 dni przed rozpoczęciem rejsu należy wpłacić pozostałą kwotę. Przy okazji warto sprawdzić, czy ostatecznie zaznaczyłeś wszystkie dodatkowe opcje, które chciałeś i czy poprawnie podałeś wszystkie dane",
-          active:false
+          active: false
         }
       ]
     }
@@ -73,11 +73,11 @@ class Tab extends React.Component{
   render(){
   	return(
     	<div className="tab">
-    	   <div className="title flex jc-btwn" onClick={()=>{
+    	   <div className="title" onClick={()=>{
          this.props.handleclick(this.props.id)
          }}>
     	     <span>{this.props.title}</span>
-           <i className={this.props.active?"fas fa-minus" : "fas fa-plus"}></i>
+           <i className={this.props.active? "fas fa-minus" : "fas fa-plus"}></i>
     	   </div>
          <div className={this.props.active ? "content show" : "content hide"}>
             {this.props.content}

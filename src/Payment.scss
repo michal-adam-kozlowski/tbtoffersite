@@ -1,17 +1,36 @@
 $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.12);
 
-
 .paymentComponent {
+    margin: 100px auto;
+    max-width: 90vw;
+
+  h3 {
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+}
+
+.paymentContent {
   display: flex;
   justify-content: space-evenly;
+  height: 350px;
 }
 
-.paymentComponent > div {
+.paymentContent > div {
   width: 40%;
-
   padding: 20px;
 }
-.wykres {
+
+.paymentContent > div:last-Child {
+  padding: 0;
+  width: 50%;
+}
+
+.chartBox {
 box-shadow: $--box-shadow;
 border-radius: 10px;
 }

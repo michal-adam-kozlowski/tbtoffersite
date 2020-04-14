@@ -1,42 +1,42 @@
 #accordion{
-   margin-top: 20px;
+   margin-top: 15px;
 }
 
 .tab{
+  border-bottom: 1px solid #f5f3f3;
+  padding-bottom: 20px;
 
   .title {
-    padding: 30px 30px;
+    display:flex;
+    padding: 25px;
     cursor: pointer;
-    transform: translate3d(0, 0, 0);
     position: relative;
-    font-size: 20px;
+    font-size: 17px;
     margin-bottom: -1px;
     text-align: left;
+    justify-content: space-between;
+    font-weight: 500;
   }
 
 
   .content{
     max-height: 100%;
-    transition: .5s;
     margin: 0;
     padding-left: 40px;
     border-top: 0;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: justify;
+    font-size: 15px;
+    width: 90%;
   }
 }
 
-.flex{
-  display:flex;
-}
 
-.show{
+.show {
   display: block;
-  transition: .5s;
 }
 
 .hide{
-  display:none;
-}
-
-.jc-btwn{
-  justify-content: space-between;
+  display: none;
 }
