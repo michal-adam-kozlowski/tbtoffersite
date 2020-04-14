@@ -74,8 +74,7 @@ class Tab extends React.Component{
   	return(
     	<div className="tab">
     	   <div className="title" onClick={()=>{
-         this.props.handleclick(this.props.id)
-         }}>
+         this.props.handleclick(this.props.id)}}>
     	     <span>{this.props.title}</span>
            <i className={this.props.active? "fas fa-minus" : "fas fa-plus"}></i>
     	   </div>

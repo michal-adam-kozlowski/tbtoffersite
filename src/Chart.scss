@@ -59,12 +59,8 @@ $shell: #84abd4;
 }
 
 
+@media only screen and (max-width: 767px) {
+  .chartComponent {
+    flex-direction: column;}
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  padding: 20px;
-  font-family: sans-serif;
 }

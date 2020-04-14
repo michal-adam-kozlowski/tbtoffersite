@@ -2,7 +2,6 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.12);
 
 .paymentComponent {
     margin: 100px auto;
-    max-width: 90vw;
 
   h3 {
     text-align: center;
@@ -33,4 +32,30 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.12);
 .chartBox {
 box-shadow: $--box-shadow;
 border-radius: 10px;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .paymentContent {
+    flex-direction: column;
+  }
+
+  .paymentContent {
+    height: auto;
+  }
+
+
+  .paymentContent > div{
+    width: auto;
+    padding: 20px 0;
+  }
+
+  .paymentContent > div:last-Child {
+    width: auto;
+  }
+
+  .paymentComponent {
+    width: 90%;
+  }
+
 }

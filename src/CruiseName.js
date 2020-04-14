@@ -23,15 +23,15 @@ state = {
 
   render() {
     return (
-      <div className="cruise-name-component">
-      <div className="cruise-name-box">
-      <img src={croatiaFlag} alt={croatiaFlag} /><h3 className="cruise-name">{this.state.cruiseName[0]}</h3>
+      <div className="cruiseNameComponent">
+      <div className="cruiseNameBox">
+      <img src={croatiaFlag} alt={croatiaFlag} /><h3 className="cruiseName">{this.state.cruiseName[0]}</h3>
       </div>
-      <div className="cruise-date-box">
-      <i class="far fa-calendar-alt"></i><h3 className="cruise-date">{this.state.cruiseDate[0]}</h3>
+      <div className="cruiseDateBox">
+      <i class="far fa-calendar-alt"></i><h3 className="cruiseDate">{this.state.cruiseDate[0]}</h3>
       </div>
-      <div className="cruise-type-box">
-      <i class="far fa-compass"></i><h3 className="cruise-type">{this.state.cruiseType[0]}</h3>
+      <div className="cruiseTypeBox">
+      <i class="far fa-compass"></i><h3 className="cruiseType">{this.state.cruiseType[0]}</h3>
       </div>
       </div>)
   };
