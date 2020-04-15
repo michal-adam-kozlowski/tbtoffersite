@@ -1,11 +1,25 @@
 h1 {
   text-align: center;
+  font-weight: 500;
+}
+
+.imageBox {
+  padding: 20px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
 }
 
 .imageBox img{
-  width: 100px;
-  height: 100px;
+  width: 23%;
+  height: auto;
+  object-fit: cover;
 }
+
+.infoContent {
+  padding: 0 20px 20px;
+}
+
 .popup {
   position: fixed;
   width: 100%;
@@ -15,19 +29,21 @@ h1 {
   right: 0;
   bottom: 0;
   margin: auto;
-  background-color: rgba(0,0,0, 0.5);
+  background-color: rgba(0, 0, 0, 0.76);
   z-index: 1;
 }
 .popupInner {
   position: absolute;
-  left: 25%;
-  right: 25%;
+  left: 20%;
+  right: 20%;
   top: 10%;
   bottom: 10%;
   margin: auto;
   border-radius: 20px;
   background: white;
   cursor: default;
+  overflow: auto;
+  border: 20px solid white;
 }
 
 .popUpContent {
@@ -55,4 +71,25 @@ h1 {
   font-size: 20px;
   outline: none;
   cursor: pointer;
+}
+
+button .fa, button .fas {
+  padding-top: 23px;
+  font-size: 25px;
+}
+
+@media only screen and (max-width: 991px) {
+  .popupInner {
+    left: 5%;
+    right: 5%;
+  }
+
+  .infoContent {
+    font-size: 15px;
+  }
+
+  .imageBox img{
+    width: 48%;
+  }
+
 }

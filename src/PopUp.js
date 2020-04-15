@@ -8,11 +8,15 @@ class Popup extends React.Component {
 return (
 <div className="popup">
 <div className="popupInner">
-<h1>{this.props.content.name}</h1>
-<div className="infoComtent">{this.props.content.info}
+<h1>{this.props.content.name2}</h1>
+<div className="infoContent"><p>{this.props.content.info}</p>
+<p>{this.props.content.info1}</p>
+<p>{this.props.content.info2}</p>
+<p>{this.props.content.info3}</p>
+<p>{this.props.content.info4}</p>
 </div>
 <div className="imageBox">{this.props.content.gallery}</div>
-<button onClick={this.props.closePopup}>X</button>
+<button onClick={this.props.closePopup}><i class="fas fa-times"></i></button>
 </div>
 </div>
 );
