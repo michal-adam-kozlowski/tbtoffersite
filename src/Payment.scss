@@ -27,16 +27,20 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
 
 .paymentContent > div:last-Child {
   padding: 0;
-  width: 55%;
+  width: 50%;
 }
 
 .chartBox {
-box-shadow: $--box-shadow;
-border-radius: 10px;
+  box-shadow: $--box-shadow;
+  border-radius: 10px;
 }
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 991px) {
+  .paymentComponent {
+    flex-direction: column;
+  }
+
   .paymentContent {
     flex-direction: column;
     height: auto;
@@ -47,10 +51,6 @@ border-radius: 10px;
     padding: 20px 0;
   }
 
-  .paymentContent > div:last-Child {
-    width: auto;
-  }
-
   .paymentComponent {
     width: 90%;
   }
@@ -58,7 +58,11 @@ border-radius: 10px;
 }
 
 @media only screen and (max-width: 1250px) {
-  .paymentContent > div{
+  .paymentContent >  div {
+    width: auto;
+  }
+
+  .paymentContent > div:last-Child {
     width: auto;
   }
 }

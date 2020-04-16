@@ -40,20 +40,11 @@ const Tabs = props => {
     <div>
       <div className="tabs">
         {props.children.map((tab, i) => (
-          <button
-            className="tabBtn"
-            onClick={() => {
-              setActiveTabIndex(i);
-            }}
-            key={i}
-          >
-            {tab.props.title}
-          </button>
+          <button className="tabBtn" onClick={() => {setActiveTabIndex(i);}} key={i} > {tab.props.title} </button>
         ))}
       </div>
       <div id="yachtTabIndicatorContainer" className="tabIndicatorContainer">
-        <div
-          className="tabIndicator"
+        <div className="tabIndicator"
            style={{
              width: 100 / props.children.length + "%",
              transform: `translateX(${activeTabIndex * 100}%)`
@@ -155,29 +146,25 @@ export default function YachtClass(props) {
   // };
 
   return (
-
     <div id="yachtMenu" className="tabsMenu">
-    <h2>Jak to działa?</h2>
-    <h4>Krok po kroku</h4>
-      <h3><div className="numberBox"><p className="numberText">1</p></div>Wybierz jednostkę a następnie klasę jachtu</h3>
-      <Tabs>
-      <div title="Jacht">
-      <div className="classBox">
-      <div><YachtDescription textComponent={comfort}/> <PopUpContent content={comfort}/></div>
-      <div><YachtDescription textComponent={premier} /> <PopUpContent content={premier}/> </div>
-      <div><YachtDescription textComponent={premierPlus}/> <PopUpContent content={premierPlus}/> </div>
-
-      </div>
-      </div>
-      <div title="Katamaran">
-      <div className="classBox" style={{justifyContent: "space-evenly"}}>
-      <div><YachtDescription textComponent={katComfort}/> <PopUpContent content={katComfort}/> </div>
-      <div><YachtDescription textComponent={katPremier}/> <PopUpContent content={katPremier}/> </div>
-
-
-      </div>
-      </div>
-      </Tabs>
+      <h2>Jak to działa?</h2>
+      <h4>Krok po kroku</h4>
+        <h3><div className="numberBox"><p className="numberText">1</p></div>Wybierz jednostkę a następnie klasę jachtu</h3>
+        <Tabs>
+        <div title="Jacht">
+          <div className="classBox">
+            <div><YachtDescription textComponent={comfort}/> <PopUpContent content={comfort}/></div>
+            <div><YachtDescription textComponent={premier} /> <PopUpContent content={premier}/> </div>
+            <div><YachtDescription textComponent={premierPlus}/> <PopUpContent content={premierPlus}/> </div>
+          </div>
+        </div>
+        <div title="Katamaran">
+          <div className="classBox" style={{justifyContent: "space-evenly"}}>
+            <div><YachtDescription textComponent={katComfort}/> <PopUpContent content={katComfort}/> </div>
+            <div><YachtDescription textComponent={katPremier}/> <PopUpContent content={katPremier}/> </div>
+          </div>
+        </div>
+        </Tabs>
     </div>
   );
 }
