@@ -4,7 +4,6 @@ h1 {
 }
 
 .imageBox {
-  padding: 20px;
   flex-wrap: wrap;
   display: flex;
   justify-content: space-between;
@@ -14,10 +13,6 @@ h1 {
   width: 23%;
   height: auto;
   object-fit: cover;
-}
-
-.infoContent {
-  padding: 0 20px 20px;
 }
 
 .popup {
@@ -32,6 +27,7 @@ h1 {
   background-color: rgba(0, 0, 0, 0.76);
   z-index: 1;
 }
+
 .popupInner {
   position: absolute;
   left: 20%;
@@ -44,6 +40,7 @@ h1 {
   cursor: default;
   overflow: auto;
   border: 20px solid white;
+  padding: 0 20px 20px
 }
 
 .popUpContent {
@@ -77,6 +74,25 @@ button .fa, button .fas {
   padding-top: 23px;
   font-size: 25px;
 }
+
+@media only screen and (max-width: 484px) {
+  .popupInner {
+    border-top: none;
+  }
+  button .fa, button .fas {
+    padding-top: 0;
+  }
+
+  h1 {
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.popupInner button {
+  padding-right: 0;
+}
+
+  }
 
 @media only screen and (max-width: 991px) {
   .popupInner {

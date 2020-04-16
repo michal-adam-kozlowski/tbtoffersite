@@ -1,4 +1,5 @@
 import React from 'react';
+import Menu from './Menu.js';
 import Hero from './Hero.js';
 import ShortInfo from './ShortInfo.js';
 import HighLights from "./HighLights.js";
@@ -13,6 +14,7 @@ function OfferWrapper() {
     return (
         <div id="content">
             <Hero/>
+            <Menu />
             <div className="container">
             <ShortInfo/>
             <HighLights/>

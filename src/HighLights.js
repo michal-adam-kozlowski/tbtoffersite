@@ -4,10 +4,10 @@ import React from 'react';
 function HighLights() {
     return (
       <center>
-        <span>
+        <div id="highLights">
             HIGHLIGHTS ARR
-        </span>
-        </center>
+        </div>
+      </center>
     );
 }
 

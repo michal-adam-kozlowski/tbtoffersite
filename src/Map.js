@@ -4,10 +4,10 @@ import React from 'react';
 function Map() {
     return (
       <center>
-        <span>
+        <div id="maps">
         MAPS
-        </span>
-        </center>
+        </div>
+      </center>
 
     );
 }

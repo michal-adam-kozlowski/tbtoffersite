@@ -8,16 +8,11 @@ import BookBtn from "./BookBtn.js";
 
 function Reservation() {
     return (
-        <div>
-        <center>
-        <span>
-        RESERVATION
-        </span>
-        </center>
-        <YachtClass />
-        <TabsMenu />
-        <Payment />
-        <BookBtn />
+        <div id="reservation">
+         <YachtClass />
+         <TabsMenu />
+         <Payment />
+         <BookBtn />
         </div>
 
     );

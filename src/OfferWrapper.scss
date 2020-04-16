@@ -7,6 +7,7 @@ body {
   color: $--font-default-color;
   letter-spacing: 0.6px;
   cursor: default;
+  scroll-behavior: smooth;
 }
 
 #content {
@@ -20,5 +21,4 @@ body {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-  font-family: $--font-family;
 }
