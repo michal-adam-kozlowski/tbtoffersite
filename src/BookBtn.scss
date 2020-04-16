@@ -1,0 +1,55 @@
+.bookBtnBox {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.bookBtn {
+  background-color: #84abd4;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.bookBtn:hover {
+  background-color: #80a0b9;
+  transition: all 0.3s ease;
+}
+
+.bookBtn:active {
+  background-color: #16527a;
+}
+
+.bookBtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.bookBtn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: -16px;
+  right: -40px;
+  transition: 0.5s;
+  font-size: 45px;
+}
+
+.bookBtn:hover span {
+  padding-right: 25px;
+}
+
+.bookBtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
