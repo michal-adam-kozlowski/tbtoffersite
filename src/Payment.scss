@@ -10,24 +10,23 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 }
 
 .paymentContent {
   display: flex;
   justify-content:  space-between;
-  height: 350px;
+  margin-top: 40px;
 }
 
 .paymentContent > div {
-  width: 40%;
+  width: 45%;
   padding: 20px;
 }
 
-.paymentContent > div:last-Child {
+.paymentContent .wrapper {
   padding: 0;
-  width: 50%;
 }
 
 .chartBox {
@@ -36,14 +35,19 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
 }
 
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1200px) {
   .paymentComponent {
     flex-direction: column;
+    margin-top: 40px;
   }
 
   .paymentContent {
     flex-direction: column;
     height: auto;
+    width: 480px;
+    max-width: 90vw;
+    margin: auto;
+    margin-top: 40px;
   }
 
   .paymentContent > div{
@@ -55,14 +59,8 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
     width: 90%;
   }
 
-}
-
-@media only screen and (max-width: 1250px) {
-  .paymentContent >  div {
-    width: auto;
+  .wrapper {
+    margin-top: 20px;
   }
 
-  .paymentContent > div:last-Child {
-    width: auto;
-  }
 }

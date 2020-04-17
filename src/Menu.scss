@@ -17,7 +17,8 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
 .navContent {
   height: 100%;
   width: 70%;
-  margin: auto
+  margin: auto;
+  scroll-behavior: smooth;
 }
 
 .menuComponent ul {
@@ -29,6 +30,7 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
   height: 100%;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 
  li.menuItem {
 	margin: 0px;
@@ -44,16 +46,15 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
   border-radius: 10px;
 
   &:hover {
-	background-color: #84abd4;;
-  color: white;
   }
 }}}
 
  li.menuItem.btn a {
-   background-color: #84abd4;;
+   background-color: #4FC4F6;
    color: white!important;
  }
 
- li.menuItem.btn a:hover {
+ .menuItem.btn:hover {
    opacity: 0.8;
+   transition: all 0.5s ease;
  }
