@@ -8,6 +8,7 @@ import Testimonials from "./Testimonials.js";
 import BookBtn from "./BookBtn.js";
 import './OfferWrapper.scss';
 import './Hero.scss';
+import Slider from "./Slider.js"
 
 
 function OfferWrapper() {
@@ -21,6 +22,8 @@ function OfferWrapper() {
             <Reservation/>
             <Testimonials/>
             <BookBtn />
+            <Slider />
+        
         </div>
         </div>
     );

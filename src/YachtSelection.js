@@ -160,7 +160,7 @@ export default function YachtClass(props) {
         </div>
         <div title="Katamaran">
           <div className="classBox" style={{justifyContent: "space-evenly"}}>
-            <div><YachtDescription textComponent={katComfort}/> <PopUpContent content={katComfort}/> </div>
+            <div><YachtDescription textComponent={katComfort}/> <PopUpContent content={katComfort} /> </div>
             <div><YachtDescription textComponent={katPremier}/> <PopUpContent content={katPremier}/> </div>
           </div>
         </div>
