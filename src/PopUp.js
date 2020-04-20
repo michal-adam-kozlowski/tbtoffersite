@@ -5,8 +5,8 @@ import './PopUp.scss';
 class Popup extends React.Component {
   render() {
     return (
-      <div className="popup">
-        <div className="popupInner">
+      <div className="popup" onClick={this.props.closePopup}>
+        <div className="popupInner" >
            <h1>{this.props.content.name2}</h1>
           <div className="infoContent"><p>{this.props.content.info}</p>
             <p>{this.props.content.info1}</p>

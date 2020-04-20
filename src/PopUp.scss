@@ -25,7 +25,8 @@ h1 {
   bottom: 0;
   margin: auto;
   background-color: rgba(0, 0, 0, 0.76);
-  z-index: 10000;
+  z-index: 100;
+  cursor: default;
 }
 
 .popupInner {
@@ -40,7 +41,8 @@ h1 {
   cursor: default;
   overflow: auto;
   border: 20px solid white;
-  padding: 0 20px 20px
+  padding: 0 20px 20px;
+  z-index: 1000000;
 }
 
 .popUpContent {

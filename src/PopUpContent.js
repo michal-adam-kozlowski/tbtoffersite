@@ -17,6 +17,7 @@ this.state = { showPopup: false };
 this.setState({
      showPopup: !this.state.showPopup
 });
+
  }
 
   render(props) {
