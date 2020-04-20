@@ -8,6 +8,9 @@ import Reservation from "./Reservation.js";
 import Testimonials from "./Testimonials.js";
 import './OfferWrapper.scss';
 import './Hero.scss';
+import HighlightsWrapper from "./HighlightsWrapper";
+import TestimonialsWrapper from './TestimonialsWrapper'
+
 
 
 function OfferWrapper() {
@@ -17,10 +20,10 @@ function OfferWrapper() {
             <Menu />
             <div className="container">
             <ShortInfo/>
-            <HighLights/>
+            <HighlightsWrapper/>
             <Map/>
             <Reservation/>
-            <Testimonials/>
+            <TestimonialsWrapper/>
         </div>
         </div>
     );
