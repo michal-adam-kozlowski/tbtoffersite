@@ -4,11 +4,12 @@ import ShortInfo from './ShortInfo.js';
 import HighLights from "./HighLights.js";
 import Map from "./Map.js";
 import Reservation from "./Reservation.js";
-import Testimonials from "./Testimonials.js";
 import BookBtn from "./BookBtn.js";
 import './OfferWrapper.scss';
 import './Hero.scss';
-import Slider from "./Slider.js"
+import HighlightsWrapper from "./HighlightsWrapper";
+import TestimonialsWrapper from './TestimonialsWrapper'
+
 
 
 function OfferWrapper() {
@@ -17,13 +18,12 @@ function OfferWrapper() {
             <Menu />
             <div className="container">
             <ShortInfo/>
-            <HighLights/>
+            <HighlightsWrapper />
             <Map/>
             <Reservation/>
-            <Testimonials/>
+            <TestimonialsWrapper/>
             <BookBtn />
-            <Slider />
-        
+
         </div>
         </div>
     );

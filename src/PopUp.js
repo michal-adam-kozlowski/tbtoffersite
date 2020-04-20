@@ -6,8 +6,9 @@ class Popup extends React.Component {
   render() {
 
     return (
-      <div className="popup">
-        <div className="popupInner">
+      <div className="popUpComponent">
+      <div className="popUp" onClick={this.props.closePopup}></div>
+        <div className="popupInner" >
            <h1>{this.props.content.name2}</h1>
           <Slider />
           <div className="infoContent"><p>{this.props.content.info}</p>
@@ -20,6 +21,7 @@ class Popup extends React.Component {
         <button onClick={this.props.closePopup}><i class="fas fa-times"></i></button>
         </div>
        </div>
+
      );
   }
 }

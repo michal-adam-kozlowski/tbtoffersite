@@ -18,12 +18,12 @@ return (
 <Hero />
   <div className="navBar" id="navBar">
     <ul>
-      <li><a href="#highLights">Atrakcje</a></li>
+      <li><a href=" ">Atrakcje</a></li>
       <li><a href="#maps">Mapa</a></li>
       <li><a href="#yachtMenu">Jachty</a></li>
       <li><a href="#payment">Płatności</a></li>
       <li><a href="#testimonials">Opinie</a></li>
-      <li><a href="#book">Rezerwuj</a></li>
+      <li className="book"><a href="#book">Rezerwuj</a></li>
     </ul>
   </div>
 </div>

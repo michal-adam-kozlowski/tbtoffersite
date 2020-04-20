@@ -1,0 +1,45 @@
+$fColor: #666;
+$textTestimonial: Poppins,
+sans-serif;
+.testimonialImage {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.testimonialName {
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    font-family: $textTestimonial;
+    font-weight: normal;
+    font-size: 21px;
+    font-style: italic;
+    color: $fColor;
+}
+
+.testimonialText {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 90%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 15px;
+    color: $fColor;
+}
+
+// .testimonialText:before {
+//     content: "\201C";
+//     font-family: Georgia, serif;
+//     color: $fontColor;
+//     font-size: 30px;
+// }
+// .testimonialText:after {
+//     content: "\201D";
+//     font-family: Georgia, serif;
+//     color: grey;
+//     font-size: 30px;
+// }

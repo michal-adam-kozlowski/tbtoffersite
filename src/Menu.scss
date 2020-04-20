@@ -4,8 +4,12 @@ html {
   scroll-behavior: smooth;
 }
 
-#highLights, #maps, #yachtMenu, #testimonials, #payment {
-  padding-top: 60px;
+#highlights, #yachtMenu, #testimonials, #payment {
+  padding-top: 70px;
+}
+
+#maps {
+  padding: 80px;
 }
 
 .navBar {
@@ -18,21 +22,45 @@ html {
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10;
+  z-index: 10000;
 }
 
 .navBar ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   list-style-type: none;
   flex-wrap: wrap;
   margin: 5px;
   padding-left: 0;
 
+  li {
+    padding: 10px;
+  }
+
   a {
     text-decoration: none;
     color: #114173;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
   }
+
+  a:hover {
+    opacity: 0.8;
+  }
+}
+
+.book {
+  border-radius: 10px;
+  background-color: #4FC4F6;
+  transition: all 0.5s;
+
+}
+
+li.book a {
+    color: white!important;
+}
+
+li.book:hover {
+    opacity: 0.8;
+    transition: all 0.3s ease;
 }
