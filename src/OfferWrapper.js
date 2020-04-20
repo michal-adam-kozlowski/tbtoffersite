@@ -1,11 +1,11 @@
 import React from 'react';
 import Menu from './Menu.js';
-import Hero from './Hero.js';
 import ShortInfo from './ShortInfo.js';
 import HighLights from "./HighLights.js";
 import Map from "./Map.js";
 import Reservation from "./Reservation.js";
 import Testimonials from "./Testimonials.js";
+import BookBtn from "./BookBtn.js";
 import './OfferWrapper.scss';
 import './Hero.scss';
 
@@ -13,7 +13,6 @@ import './Hero.scss';
 function OfferWrapper() {
     return (
         <div id="content">
-            <Hero/>
             <Menu />
             <div className="container">
             <ShortInfo/>
@@ -21,6 +20,7 @@ function OfferWrapper() {
             <Map/>
             <Reservation/>
             <Testimonials/>
+            <BookBtn />
         </div>
         </div>
     );
