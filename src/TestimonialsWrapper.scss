@@ -20,6 +20,8 @@ $sColor: rgba(0, 0, 0, 0.32);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 $sColor;
     border-radius: 6px;
     background-color: $bgTestimonials;
+    margin-bottom: 60px;
+    margin-right: 10px;
 }
 
 .testimonialsWrapper div:before {
@@ -38,11 +40,4 @@ $sColor: rgba(0, 0, 0, 0.32);
     transform: translate(-50%, -50%);
     box-shadow: 4px 11px 30px -4px $sColor;
     object-fit: cover;
-}
-
-//media query
-@media (max-width: 900px) {
-    .testimonialsWrapper div {
-        margin-bottom: 80px;
-    }
 }
