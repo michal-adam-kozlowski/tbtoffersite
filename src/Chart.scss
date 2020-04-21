@@ -1,62 +1,124 @@
-$blue: #80a0b9;
-$lightblue: #d0e2ec;
-$shell: #84abd4;
+$--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
+$--color-red: #E64C65;
+$--color-blue: #11A8AB;
+$--color-green: #4FC4F6;
 
 
 .chartComponent {
-  width: 100%;
-  height: 100%;
   display: flex;
-  align-items: center;
+  box-shadow: $--box-shadow;
+  border-radius: 10px;
+  flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .chart {
-  background:
-    conic-gradient(
-      $lightblue 30%,
-      $blue 0 60%,
-      $shell 0
-    );
+ position: relative;
+ width: 200px;
+ height: 200px;
+ border-radius: 100%;
+ min-width: 200px;
+ }
+
+p.center {
+  background: white;
+  position: absolute;
+  text-align: center;
+	font-size: 28px;
+  top:0;left:0;bottom:0;right:0;
+  width: 130px;
+  height: 130px;
+  margin: auto;
   border-radius: 50%;
-  width: 200px;
-  height: 0;
-  padding-top: 200px;
-  float: left;
-  padding-right: 20px;
-  margin-right: 20px;
+  line-height: 35px;
+  padding: 15% 0 0;
+  color: $--color-red;
+  font-size: 22px;
 }
 
-.key {
-  padding: 0;
-  > li {
-    display: table-row;
-    font-size: 15px;
-    > * {
-      display: table-cell;
-      border-bottom: 12px solid white;
+.part {
+    border-radius: 50%;
+    clip: rect(0px, 200px, 200px, 100px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+.partColor {
+    border-radius: 50%;
+    clip: rect(0px, 100px, 200px, 0px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    font-family: monospace;
+    font-size: 1.5rem;
+  }
+#part1 {
+    transform: rotate(0deg);
+  }
+
+#part1 .partColor {
+    background-color: $--color-red;
+    transform: rotate(108deg);
+  }
+#part2 {
+    transform: rotate(108deg);
+  }
+#part2 .partColor {
+    background-color: $--color-green;
+    transform: rotate(108deg);
+  }
+#part3 {
+    transform: rotate(216deg);
+  }
+#part3 .partColor {
+    background-color: $--color-blue;
+    transform: rotate(144deg);
+  }
+
+.chartlistBox {
+  padding-right: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.chartlistBox ul {
+  list-style-type: none;
+  line-height: 2;
+}
+
+.chartlistBox ul li::before {
+  content: "\2022";
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+li.firstPayment::before {
+  color: $--color-red;
+}
+
+li.secondPayment::before {
+  color: $--color-green;
+}
+
+li.thirdPayment::before {
+  color: $--color-blue;
+}
+
+
+
+  @media only screen and (max-width: 1145px) {
+    .chartComponent {
+      margin-bottom: 30px;
     }
   }
-}
 
-.percent {
-  color: white;
-  padding: 10px 2px;
-  text-shadow: 0 0 1px black;
-  text-align: center;
+@media only screen and (min-width: 1000px) {
+.chartComponent {
+max-height: 318px;
 }
-.choice {
-  padding-left: 10px;
-}
-
-.blue {
-  background: $blue;
-}
-.lightblue {
-  background: $lightblue;
-}
-.shell {
-  background: $shell;
 }
 
 @media only screen and (max-width: 600px) {

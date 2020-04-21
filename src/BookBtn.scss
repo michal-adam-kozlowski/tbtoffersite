@@ -5,7 +5,7 @@
 }
 
 .bookBtn {
-  background-color: #84abd4;
+  background-color: #4FC4F6;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -17,39 +17,10 @@
   margin: 5px;
   text-transform: uppercase;
   border-radius: 10px;
+  text-decoration: none;
 }
 
 .bookBtn:hover {
-  background-color: #80a0b9;
+  opacity: 0.8;
   transition: all 0.3s ease;
-}
-
-.bookBtn:active {
-  background-color: #16527a;
-}
-
-.bookBtn span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.bookBtn span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: -13px;
-  right: -30px;
-  transition: 0.5s;
-  font-size: 37px;
-}
-
-.bookBtn:hover span {
-  padding-right: 25px;
-}
-
-.bookBtn:hover span:after {
-  opacity: 1;
-  right: 0;
 }
