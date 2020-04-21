@@ -18,7 +18,7 @@ return (
 <Hero />
   <div className="navBar" id="navBar">
     <ul>
-      <li><a href=" ">Atrakcje</a></li>
+      <li><a href="#main">Atrakcje</a></li>
       <li><a href="#maps">Mapa</a></li>
       <li><a href="#yachtMenu">Jachty</a></li>
       <li><a href="#payment">Płatności</a></li>

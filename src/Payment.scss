@@ -1,9 +1,9 @@
 $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
 
 .paymentComponent {
-  margin: 100px auto;
+  margin: 0 auto;
   width: 90%;
-  max-height: 700px;
+  padding-top: 100px;
 
   h3 {
     text-align: center;
@@ -11,7 +11,7 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 0;
+
   }
 }
 
@@ -29,6 +29,7 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
 .paymentContent .accordionWrapper {
   padding: 0;
   height: auto;
+  min-height: 100%;
 }
 
 .chartBox {

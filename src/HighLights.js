@@ -4,7 +4,7 @@ import React from 'react';
 function HighLights() {
     return (
       <center>
-        <div id="highLights">
+        <div>
             HIGHLIGHTS ARR
         </div>
       </center>

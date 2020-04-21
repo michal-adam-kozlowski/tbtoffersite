@@ -177,7 +177,7 @@ class HighlightsWrapper extends Component {
 
         if (this.state.tag === 'party') {
             return (
-                <div className='main'>
+                <div className='main' id="main">
                     <div className='highlightsMenu'>
                         <div className="higlightsMenuTags" onClick={this.handleAll}>All</div>
                         <div className={ (this.state.tag ==='party') ? "higlightsMenuTagsActive" : "higlightsMenuTags"} onClick={this.handleParty}>Party</div>
@@ -204,7 +204,7 @@ class HighlightsWrapper extends Component {
 
         else if (this.state.tag === 'activities') {
             return (
-                <div className='main'>
+                <div className='main' id="main">
                     <div className='highlightsMenu'>
                         <div className='higlightsMenuTags' onClick={this.handleAll}>All</div>
                         <div className='higlightsMenuTags' onClick={this.handleParty}>Party</div>
@@ -231,7 +231,7 @@ class HighlightsWrapper extends Component {
 
         else if (this.state.tag === 'sightseeing') {
             return (
-                <div className='main'>
+                <div className='main' id="main">
                     <div className='highlightsMenu'>
                         <div className='higlightsMenuTags' onClick={this.handleAll}>All</div>
                         <div className='higlightsMenuTags' onClick={this.handleParty}>Party</div>
@@ -259,7 +259,7 @@ class HighlightsWrapper extends Component {
 
 
             return (
-                <div className='main'>
+                <div className='main' id="main">
                     <div className='highlightsMenu'>
                         <div className={ (this.state.tag ==='all') ? "higlightsMenuTagsActive" : "higlightsMenuTags"} onClick={this.handleAll}>All</div>
                         <div className='higlightsMenuTags' onClick={this.handleParty}>Party</div>
