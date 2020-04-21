@@ -14,8 +14,7 @@ class Slider extends React.Component {
         "https://www.theboattrip.eu/_content/rejsy/zakwaterowanie/jachty/jachty-44.jpg",
         "https://www.theboattrip.eu/_content/rejsy/zakwaterowanie/jachty/jachty-44.jpg",
         "https://www.theboattrip.eu/_content/rejsy/zakwaterowanie/jachty/jachty-44.jpg",
-        "https://www.theboattrip.eu/_content/rejsy/zakwaterowanie/jachty/jachty-44.jpg",
-
+        "https://www.theboattrip.eu/_content/rejsy/zakwaterowanie/jachty/jachty-44.jpg"
       ],
       currentIndex: 0,
       translateValue: 0

@@ -4,6 +4,7 @@ import "./BookOptions.scss";
 import "./YachtSelection.scss";
 import YachtDescription from "./YachtDescription.js";
 import PopUpContent from "./PopUpContent.js";
+import Slider from "./Slider.js"
 
 import imageComfort2 from './img/comfort-22.jpg';
 import imageComfort3 from './img/comfort-33.jpg';
@@ -160,7 +161,7 @@ export default function YachtClass(props) {
         </div>
         <div title="Katamaran">
           <div className="classBox" style={{justifyContent: "space-evenly"}}>
-            <div><YachtDescription textComponent={katComfort}/> <PopUpContent content={katComfort} /> </div>
+            <div><YachtDescription textComponent={katComfort}/> <PopUpContent content={katComfort}/> </div>
             <div><YachtDescription textComponent={katPremier}/> <PopUpContent content={katPremier}/> </div>
           </div>
         </div>
