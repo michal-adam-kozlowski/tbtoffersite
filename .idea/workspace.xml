@@ -3,21 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e60012a6-5ca8-4649-82f8-0f9cab9bea70" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BookBtn.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookBtn.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Chart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Chart.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OfferWrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/OfferWrapper.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OfferWrapper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/OfferWrapper.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PayAccordion.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PayAccordion.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PayAccordion.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/PayAccordion.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Payment.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payment.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PopUp.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/PopUp.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Reservation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reservation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HighlightPopup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/HighlightPopup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HighlightPopup.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/HighlightPopup.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,7 +16,29 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/HighlightPopup.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/HighlightPopup.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -56,6 +65,8 @@
         <option value="$PROJECT_DIR$/src/Review.js" />
         <option value="$PROJECT_DIR$/src/HighlightsWrapper.js" />
         <option value="$PROJECT_DIR$/src/OfferWrapper.js" />
+        <option value="$PROJECT_DIR$/src/HighlightPopup.js" />
+        <option value="$PROJECT_DIR$/src/HighlightPopup.scss" />
       </list>
     </option>
   </component>
@@ -126,15 +137,16 @@
       <workItem from="1582898084868" duration="3317000" />
       <workItem from="1587041940725" duration="373000" />
       <workItem from="1587376969956" duration="1017000" />
-      <workItem from="1587458311617" duration="251000" />
+      <workItem from="1587458311617" duration="866000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5364000" />
+    <option name="totallyTimeSpent" value="5979000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496464" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -295,6 +307,23 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HighlightPopup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HighlightPopup.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
         </state>
       </provider>
     </entry>
