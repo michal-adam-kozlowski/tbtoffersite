@@ -1,10 +1,11 @@
 .main {
   text-align: center;
-  height: 40vh;
+  // height: 40vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding-top: 180px;
+  padding-top: 200px;
+  margin-top: -100px;
 }
 
 .wrapper {
@@ -14,7 +15,10 @@
 
 .highlightsMenu {
   display: flex;
-  align-items: start;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-weight: 500;
 }
 
 .higlightsMenuTags {
@@ -34,7 +38,7 @@
   transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
   -webkit-transition: opacity 0.5s ease-in-out;
-  color: red;
+  color: #114173;
 }
 
 .higlightsMenuTags:hover {
@@ -51,7 +55,7 @@
 
 .image-container {
   display: flex;
-  align-items: start;
+  justify-content: flex-start;
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;

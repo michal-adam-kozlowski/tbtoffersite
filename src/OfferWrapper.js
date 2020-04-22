@@ -1,7 +1,6 @@
 import React from 'react';
 import Menu from './Menu.js';
 import ShortInfo from './ShortInfo.js';
-import HighLights from "./HighLights.js";
 import Map from "./Map.js";
 import Reservation from "./Reservation.js";
 import BookBtn from "./BookBtn.js";

@@ -25,7 +25,7 @@ class Highlight extends Component {
         <div className='highlight'
              onClick={() => this.togglePopup()}
         >
-            <img src={require(`${this.props.image}`)} className='image'/>
+            <img src={require(`${this.props.image}`)} alt={""} className='image'/>
             <p className='highlightTitle'>{this.props.name}</p>
             {this.state.showPopup ?
                 <Popup

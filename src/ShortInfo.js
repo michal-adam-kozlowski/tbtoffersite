@@ -29,7 +29,7 @@ class ShortInfo extends React.Component {
 
 
     return (
-      <div className="shortInfoComponent">
+      <div className="shortInfoComponent" id="shortInfo">
       <div className="shortInfo">
       <CruiseName />
       <div className="shortInfoBox">
