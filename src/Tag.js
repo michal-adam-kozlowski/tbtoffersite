@@ -17,8 +17,6 @@ class Tag extends Component {
     }
 }
 
-
-
 export default Tag;
 
  // <img src={this.props.singleTag.image} alt={"tag"} />

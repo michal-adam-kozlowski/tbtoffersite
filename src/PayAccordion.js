@@ -1,7 +1,7 @@
 import React from 'react';
 import './PayAccordion.scss';
 
-const data = [
+const paymentInfo = [
   {
     title: 'I rata - 30% ceny',
     paragraph: 'W ciągu 24 godzin od złożenia rezerwacji należy wpłacić zaliczkę wysokości 30%* całej ceny wycieczki. Wpłata zaliczki stanowi potwierdzenie rezerwacji. W przypadku niewpłacenia zaliczki rezerwacja zostanie anulowana. W okresie promocji First Minute zaliczka wynosi tylko 200 PLN.'
@@ -25,10 +25,10 @@ class Accordion extends React.Component {
     return (
       <div {...{ className: 'accordionWrapper' }}>
         <ul {...{ className: 'accordionList' }}>
-          {data.map((data, key) => {
+          {paymentInfo.map((paymentInfo, key) => {
             return (
               <li {...{ className: 'accordionList-item', key }}>
-                <AccordionItem {...data} />
+                <AccordionItem {...paymentInfo} />
               </li>
             )
           })}

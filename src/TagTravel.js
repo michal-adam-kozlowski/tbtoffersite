@@ -16,6 +16,4 @@ class TagTravel extends Component {
     }
 }
 
-
-
 export default TagTravel;

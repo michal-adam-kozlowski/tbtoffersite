@@ -5,32 +5,6 @@ import "./YachtSelection.scss";
 import YachtDescription from "./YachtDescription.js";
 import PopUpContent from "./PopUpContent.js";
 
-import imageComfort2 from './img/comfort-22.jpg';
-import imageComfort3 from './img/comfort-33.jpg';
-import imageComfort4 from './img/comfort-44.jpg';
-import imageComfort5 from './img/comfort-55.jpg';
-
-import imagePremier2 from './img/premier-22.jpg';
-import imagePremier3 from './img/premier-33.jpg';
-import imagePremier4 from './img/premier-44.jpg';
-import imagePremier5 from './img/premier-55.jpg';
-
-import imagePremierPlus2 from './img/premier-plus-22.jpg';
-import imagePremierPlus3 from './img/premier-plus-33.jpg';
-import imagePremierPlus4 from './img/premier-plus-44.jpg';
-import imagePremierPlus5 from './img/premier-plus-55.jpg';
-
-import imageKatComfort2 from './img/kat-comfort-22.jpg';
-import imageKatComfort3 from './img/kat-comfort-33.jpg';
-import imageKatComfort4 from './img/kat-comfort-44.jpg';
-import imageKatComfort5 from './img/kat-comfort-55.jpg';
-
-import imageKatPremier2 from './img/kat-premier-22.jpg';
-import imageKatPremier3 from './img/kat-premier-33.jpg';
-import imageKatPremier4 from './img/kat-premier-44.jpg';
-import imageKatPremier5 from './img/kat-premier-55.jpg';
-
-
 
 const Tabs = props => {
 
@@ -57,8 +31,8 @@ const Tabs = props => {
 };
 
 
-export default function YachtClass(props) {
-  const comfort = {
+function YachtClass(props) {
+  const yachtComfort = {
     image: require("./img/comfort.jpg"),
     name: "Comfort",
     name2: "Jacht klasy Comfort",
@@ -66,14 +40,18 @@ export default function YachtClass(props) {
     person: "8 max 10",
     year: "2008 - 2010",
     amenities: ["3 lub 4 zamykane kabiny", "przestronny salon z kuchnią", "2 lub 3 łazienki"],
-    info1: [<strong>To podstawowa klasa jachtów w naszej ofercie</strong>, ", rezerwując tutaj miejsce zostaniecie zakwaterowani na wygodnym jachcie 8-10 osobowym (długość kadłuba od 40 do 46 stóp ~ 12-14m), około 10-12 letnim."],
-    info2: [<strong>Przykładowe jednostki</strong>, " w tej klasie to Sun Odyssey 439, Oceanis 43 lub Bavaria 44."],
-    info3: [<strong>Jeśli jacht jest 8-osobowy</strong>, " standardowy układ do spania to 3 zamykane kabiny dwuosobowe + rozkładana kanapa dwuosobowa w salonie i 2 łazienki."],
-    info4: [<strong>Jeśli jacht jest 10-osobowy</strong>, " standardowy układ do spania to 3 zamykane kabiny dwuosobowe + czwarta zamykana kabina z łóżkiem piętrowym + rozkładana kanapa dwuosobowa w salonie. Na poglądowych zdjęciach powyżej przedstawiamy przykładowy jacht klasy COMFORT - widok z zewnątrz, kajuty, salon i standardowy rozkład miejsc do spania."],
-    gallery: [<img src={imageComfort2} alt="" />, <img src={imageComfort3} alt="" />, <img src={imageComfort4} alt="" />, <img src={imageComfort5} alt="" />]
+    info1Title: "To podstawowa klasa jachtów w naszej ofercie.",
+    info1: "Rezerwując tutaj miejsce zostaniecie zakwaterowani na wygodnym jachcie 8-10 osobowym (długość kadłuba od 40 do 46 stóp ~ 12-14m), około 10-12 letnim.",
+    info2Title: "Przykładowe jednostki: ",
+    info2: " Sun Odyssey 439, Oceanis 43 lub Bavaria 44.",
+    info3Title: "Jeśli jacht jest 8-osobowy",
+    info3: ", standardowy układ do spania to 3 zamykane kabiny dwuosobowe + rozkładana kanapa dwuosobowa w salonie i 2 łazienki.",
+    info4Title: "Jeśli jacht jest 10-osobowy",
+    info4: ", standardowy układ do spania to 3 zamykane kabiny dwuosobowe + czwarta zamykana kabina z łóżkiem piętrowym + rozkładana kanapa dwuosobowa w salonie. Na poglądowych zdjęciach powyżej przedstawiamy przykładowy jacht klasy COMFORT - widok z zewnątrz, kajuty, salon i standardowy rozkład miejsc do spania.",
+    gallery: [require("./img/comfort-22.jpg"), require("./img/comfort-33.jpg"), require("./img/comfort-44.jpg"), require("./img/comfort-55.jpg")]
   };
 
-  const premier = {
+  const yachtPremier = {
     image: require("./img/premier.jpg"),
     name: "Premier",
     name2: "Jacht klasy Premier",
@@ -81,14 +59,18 @@ export default function YachtClass(props) {
     person: "8 max 10",
     year: "2014 lub nowszy",
     amenities: ["3 lub 4 zamykane kabiny", "przestronny salon z kuchnią", "2 lub 3 łazienki"],
-    info1: [<strong>Jeśli szukasz zakwaterowania na nowszym i lepiej wykończonym jachcie</strong>, ", to jest klasa dla Ciebie. Rezerwując miejsce na jachcie klasy PREMIER zostaniecie zakwaterowani na wygodnym jachcie 8-10 osobowym (długość kadłuba od 40 do 46 stóp ~ 12-14m), wyprodukowanym w roku 2014 lub nowszym."],
-    info2: [<strong>Przykładowe jednostki</strong>, " w tej klasie to Sun Odyssey 449, Oceanis 46.1 lub Bavaria 45. Wielkościowo i pod kątem układu jachty są podobne do tych w klasie COMFORT, natomiast głównym wyznacznikiem przynależności do klasy jest tu wiek jednostki."],
-    info3: [<strong>Jeśli jacht jest 8-osobowy</strong>, " standardowy układ do spania to 3 zamykany kabiny dwuosobowe + rozkładana kanapa dwuosobowa w salonie i 2 łazienki."],
-    info4: [<strong>Jeśli jacht jest 10-osobowy</strong>, " standardowy układ do spania to 3 zamykane kabiny dwuosobowe + czwarta zamykana kabina z łóżkiem piętrowym + rozkładana kanapa dwuosobowa w salonie."],
-    gallery: [<img src={imagePremier2} alt="" />, <img src={imagePremier3} alt="" />, <img src={imagePremier4} alt="" />, <img src={imagePremier5} alt="" />]
+    info1Title: "Jeśli szukasz zakwaterowania na nowszym i lepiej wykończonym jachcie, to jest klasa dla Ciebie.",
+    info1: "Rezerwując miejsce na jachcie klasy PREMIER zostaniecie zakwaterowani na wygodnym jachcie 8-10 osobowym (długość kadłuba od 40 do 46 stóp ~ 12-14m), wyprodukowanym w roku 2014 lub nowszym.",
+    info2Title: "Przykładowe jednostki: ",
+    info2: " Sun Odyssey 449, Oceanis 46.1 lub Bavaria 45. Wielkościowo i pod kątem układu jachty są podobne do tych w klasie COMFORT, natomiast głównym wyznacznikiem przynależności do klasy jest tu wiek jednostki.",
+    info3Title: "Jeśli jacht jest 8-osobowy",
+    info3: ", standardowy układ do spania to 3 zamykany kabiny dwuosobowe + rozkładana kanapa dwuosobowa w salonie i 2 łazienki.",
+    info4Title: "Jeśli jacht jest 10-osobowy",
+    info4: ", standardowy układ do spania to 3 zamykane kabiny dwuosobowe + czwarta zamykana kabina z łóżkiem piętrowym + rozkładana kanapa dwuosobowa w salonie.",
+    gallery: [require("./img/premier-22.jpg"), require("./img/premier-33.jpg"), require("./img/premier-44.jpg"), require("./img/premier-55.jpg")]
   };
 
-  const premierPlus = {
+  const yachtPremierPlus = {
     image: require("./img/premier-plus.jpg"),
     name: "Premier +",
     name2: "Jacht klasy Premier+",
@@ -97,11 +79,15 @@ export default function YachtClass(props) {
     year: "2014 lub nowszy",
     amenities: ["5 zamykanych kabin", "przestronny salon z kuchnią", "4-5 łazienek"],
     shortInfo: "Najlepiej wyposażone i pełne udogodnień. Pamiętajcie, że nikt nie śpi tu w salonie, co diametralnie wpływa na komfort życia.",
-    info1: [<strong>Najwyższa dostępna klasa jachtów i jednoczesnie najbardziej wygodna.</strong>, ", Rezerwując miejsce na jachcie klasy PREMIER PLUS zostaniecie zakwaterowani na wygodnym dużym jachcie , na którym nikogo nie kwaterujemy w salonie. Jacht będzie mieć długość kadłuba od 50 stóp w górę ~ ponad 15m i będzie wyprodukowany w roku 2014 lub nowszy."],
-    info2: [<strong>Przykładowe jednostki</strong>, " w tej klasie to Sun Odyssey 519, Oceanis 51.1, Bavaria 51 lub Elan 50."],
-    info3: [<strong>Jachty tej klasy są nominalnie 13-osobowe</strong>, ", a standardowy układ do spania to 4 zamykane kabiny dwuosobowe + piąta zamykana kabina z łóżkiem piętrowym + 1-osobowa kabina skippera + rozkładana kanapa dwuosobowa w salonie."],
-    info4: [<strong> Na jachcie tej klasy nie kwaterujemy nikogo w salonie</strong>, " , więc pływa tutaj maksymalnie 11 osób (10 osób w kabinach dwuosobowych + skipper w skipperce jednoosobowej na dziobie)."],
-    gallery: [<img src={imagePremierPlus2} alt="" />, <img src={imagePremierPlus3} alt="" />, <img src={imagePremierPlus4} alt="" />, <img src={imagePremierPlus5} alt="" />]
+    info1Title: "Najwyższa dostępna klasa jachtów i jednoczesnie najbardziej wygodna.",
+    info1: "Rezerwując miejsce na jachcie klasy PREMIER PLUS zostaniecie zakwaterowani na wygodnym dużym jachcie , na którym nikogo nie kwaterujemy w salonie. Jacht będzie mieć długość kadłuba od 50 stóp w górę ~ ponad 15m i będzie wyprodukowany w roku 2014 lub nowszy.",
+    info2Title: "Przykładowe jednostki: ",
+    info2: " Sun Odyssey 519, Oceanis 51.1, Bavaria 51 lub Elan 50.",
+    info3Title: "Jachty tej klasy są nominalnie 13-osobowe. ",
+    info3: "Standardowy układ do spania to 4 zamykane kabiny dwuosobowe + piąta zamykana kabina z łóżkiem piętrowym + 1-osobowa kabina skippera + rozkładana kanapa dwuosobowa w salonie.",
+    info4Title: "Na jachcie tej klasy nie kwaterujemy nikogo w salonie.",
+    info4: "Pływa tutaj maksymalnie 11 osób (10 osób w kabinach dwuosobowych + skipper w skipperce jednoosobowej na dziobie).",
+    gallery: [require("./img/premier-plus-22.jpg"), require("./img/premier-plus-33.jpg"), require("./img/premier-plus-44.jpg"), require("./img/premier-plus-55.jpg")]
   };
 
   const katComfort = {
@@ -113,10 +99,13 @@ export default function YachtClass(props) {
     year: "2014 lub nowszy",
     amenities: ["4 zamykane kabiny", "2 salony (zewnętrzny i wewnętrzny z kuchnią)", "4-5 łazienek", ],
     shortInfo: "Godne zaufania, sprawdzone i praktyczne katamarany. Są wyposażone we wszystkie kluczowe i niezbędne elementy.",
-    info1: [<strong>To podstawowa klasa katamaranów w naszej ofercie</strong>, ", rezerwując tutaj miejsce zostaniecie zakwaterowani na wygodnym katamaranie 12-osobowym, o długości około 40 stóp wyprodukowanym w roku 2014 lub nowszym."],
-    info2: [<strong>Przykładowe jednostki</strong>, " w tej klasie to Lagoon 39, Lagoon 400, Lucia 40 lub Bali 4.1."],
-    info3: [<strong>Na katamaranie standardowo kwaterujemy 10 osób załogi + skippera.</strong>, " Do dyspozycji załogi są 4 kabiny dwuosobowe i 2 miejsca do spania w salonie (rozkładana sofa), skipper najczęściej śpi w skipperce na dziobie."],
-    gallery: [<img src={imageKatComfort2} alt="" />, <img src={imageKatComfort3} alt="" />, <img src={imageKatComfort4} alt="" />, <img src={imageKatComfort5} alt="" />]
+    info1Title: "To podstawowa klasa katamaranów w naszej ofercie. ",
+    info1: "Rezerwując tutaj miejsce zostaniecie zakwaterowani na wygodnym katamaranie 12-osobowym, o długości około 40 stóp wyprodukowanym w roku 2014 lub nowszym.",
+    info2Title: "Przykładowe jednostki: ",
+    info2: " Lagoon 39, Lagoon 400, Lucia 40 lub Bali 4.1.",
+    info3Title: "Na katamaranie standardowo kwaterujemy 10 osób załogi + skippera. ",
+    info3: "Do dyspozycji załogi są 4 kabiny dwuosobowe i 2 miejsca do spania w salonie (rozkładana sofa), skipper najczęściej śpi w skipperce na dziobie.",
+    gallery: [require("./img/kat-comfort-22.jpg"), require("./img/kat-comfort-33.jpg"), require("./img/kat-comfort-44.jpg"), require("./img/kat-comfort-55.jpg")]
   };
 
   const katPremier = {
@@ -128,11 +117,15 @@ export default function YachtClass(props) {
     year: "2014 lub nowszy",
     amenities: ["4 zamykane kabiny", "2 salony (zewnętrzny i wewnętrzny z kuchnią)", "4-5 łazienek" ],
     shortInfo: "Bardzo dobre jednostki, oferują sporo udogodnień i są znacząco większe od katamaranów COMFORT, a pływa na nich ta sama liczba osób. ",
-    info1: [<strong>Jeśli szukasz zakwaterowania na większym i lepiej wykończonym katamaranie</strong>, ", to jest klasa dla Ciebie. Rezerwując miejsce na katamaranie klasy PREMIER zostaniecie zakwaterowani na wygodnej jednostce o długości kadłuba powyżej 42 stóp, wyprodukowanej w roku 2014 lub nowszym."],
-    info2: [<strong>Przykładowe jednostki</strong>, " w tej klasie to Lagoon 42, Lagoon 450, Bali 4.3, Bali 4.5."],
-    info3: "Wiekowo i pod kątem układu katamarany z tej klasy są podobne do tych w klasie COMFORT, natomiast głównym wyznacznikiem przynależności do klasy jest tu wielkość jednostki i większa przestrzeń na niej.",
-    info4: [<strong>Na katamaranie standardowo kwaterujemy 10 osób załogi + skippera.</strong>, " Do dyspozycji załogi są 4 kabiny dwuosobowe i 2 miejsca do spania w salonie (rozkładana sofa), skipper najczęściej śpi w skipperce na dziobie."],
-    gallery: [<img src={imageKatPremier2} alt="" />, <img src={imageKatPremier3} alt="" />, <img src={imageKatPremier4} alt="" />, <img src={imageKatPremier5} alt="" />]
+    info1Title: "Jeśli szukasz zakwaterowania na większym i lepiej wykończonym katamaranie, to jest klasa dla Ciebie. ",
+    info1: "Rezerwując miejsce na katamaranie klasy PREMIER zostaniecie zakwaterowani na wygodnej jednostce o długości kadłuba powyżej 42 stóp, wyprodukowanej w roku 2014 lub nowszym.",
+    info2Title: "Przykładowe jednostki: ",
+    info2: " Lagoon 42, Lagoon 450, Bali 4.3, Bali 4.5.",
+    info3Title: "Wiekowo i pod kątem układu katamarany z tej klasy są podobne do tych w klasie COMFORT.",
+    info3: "Głównym wyznacznikiem przynależności do klasy jest tu wielkość jednostki i większa przestrzeń na niej.",
+    info4Title: "Na katamaranie standardowo kwaterujemy 10 osób załogi + skippera. ",
+    info4: "Do dyspozycji załogi są 4 kabiny dwuosobowe i 2 miejsca do spania w salonie (rozkładana sofa), skipper najczęściej śpi w skipperce na dziobie.",
+    gallery: [require("./img/kat-premier-22.jpg"), require("./img/kat-premier-33.jpg"), require("./img/kat-premier-44.jpg"), require("./img/kat-premier-55.jpg")]
   };
 
 
@@ -153,9 +146,9 @@ export default function YachtClass(props) {
         <Tabs>
         <div title="Jacht">
           <div className="classBox">
-            <div><YachtDescription textComponent={comfort}/> <PopUpContent content={comfort}/></div>
-            <div><YachtDescription textComponent={premier} /> <PopUpContent content={premier}/> </div>
-            <div><YachtDescription textComponent={premierPlus}/> <PopUpContent content={premierPlus}/> </div>
+            <div><YachtDescription textComponent={yachtComfort}/> <PopUpContent content={yachtComfort}/></div>
+            <div><YachtDescription textComponent={yachtPremier} /> <PopUpContent content={yachtPremier}/> </div>
+            <div><YachtDescription textComponent={yachtPremierPlus}/> <PopUpContent content={yachtPremierPlus}/> </div>
           </div>
         </div>
         <div title="Katamaran">
@@ -168,3 +161,5 @@ export default function YachtClass(props) {
     </div>
   );
 }
+
+export default YachtClass

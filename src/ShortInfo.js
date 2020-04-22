@@ -7,34 +7,31 @@ import './ShortInfo.scss';
 
 class ShortInfo extends React.Component {
 
-  state = {
-    titleCroatia: "Chorwacja Północna",
-    textCroatia: "Chorwacja Północna jest niesamowita! Piękne miasteczka, urokliwe zatoczki, zieleńsze wyspy. Pływamy całą flotą, wszyscy młodzi, piękni i opaleni. Zwiedzamy najpiękniejsze i niedostępne od strony lądu zakątki Chorwacji, snorkelujemy, jemy świeże owoce morza. Zapraszamy!",
-    titleTravelInfo: "Travel Info"
-  }
-
   render() {
+  const shortInfo = {
+     titleCroatia: "Chorwacja Północna",
+     textCroatia: "Chorwacja Północna jest niesamowita! Piękne miasteczka, urokliwe zatoczki, zieleńsze wyspy. Pływamy całą flotą, wszyscy młodzi, piękni i opaleni. Zwiedzamy najpiękniejsze i niedostępne od strony lądu zakątki Chorwacji, snorkelujemy, jemy świeże owoce morza. Zapraszamy!",
+   }
 
   const taginfo = [
-  {name: "Flota", tagTitle: "Flota jachtów", text: "Rejs, na którym pływamy flotą jachtów!", image: require("./img/icons/boat-icon.png"), class: "fas fa-ship"},
-  {name: "Imprezy", tagTitle: "Imprezy", text: "Rejs, na którym imprez nie zabraknie!", image: require("./img/icons/music.png"), class: "fas fa-glass-cheers"},
-  {name: "Zabytki", tagTitle: "Zwiedzanie", text: "Rejs, na którym odwiedzimy wiele pięknych i zabytkowych miast!", image: require("./img/icons/binoculars .png"), class: "fas fa-route"},
-  {name: "Snorkeling", tagTitle: "Snorkeling", text: "Rejs, gdzie nie zabraknie okazji do świetnego snorkelingu!", image: require("./img/icons/mask.png"), class: "fas fa-swimmer"}
+  {name: "Flota", tagTitle: "Flota jachtów", text: "Rejs, na którym pływamy flotą jachtów!", class: "fas fa-ship"},
+  {name: "Imprezy", tagTitle: "Imprezy", text: "Rejs, na którym imprez nie zabraknie!", class: "fas fa-glass-cheers"},
+  {name: "Zabytki", tagTitle: "Zwiedzanie", text: "Rejs, na którym odwiedzimy wiele pięknych i zabytkowych miast!", class: "fas fa-route"},
+  {name: "Snorkeling", tagTitle: "Snorkeling", text: "Rejs, gdzie nie zabraknie okazji do świetnego snorkelingu!", class: "fas fa-swimmer"}
 ];
 
   const travelinfo = [
-  {name: "Samolot", tagTitle: "Lot do Zadaru", text: "Z Zadaru do Sukosanu można łatwo dojechać regularnie kursującymi autobusami.", image: require("./img/icons/plane-icon.png"), class: "fas fa-plane"},
-  {name: "Autokar", tagTitle: "Autokar", text: "Możliwy dojazd naszym autokarem. Koszt w dwie strony to 350 PLN/os.", image: require("./img/icons/bus.png"), class: "fas fa-bus"},
+  {name: "Samolot", tagTitle: "Lot do Zadaru", text: "Z Zadaru do Sukosanu można łatwo dojechać regularnie kursującymi autobusami.", class: "fas fa-plane"},
+  {name: "Autokar", tagTitle: "Autokar", text: "Możliwy dojazd naszym autokarem. Koszt w dwie strony to 350 PLN/os.", class: "fas fa-bus"},
 ];
-
 
     return (
       <div className="shortInfoComponent" id="shortInfo">
       <div className="shortInfo">
       <CruiseName />
       <div className="shortInfoBox">
-      <h2 className="shortInfoTitle">{this.state.titleCroatia}</h2>
-      <p className="shortInfoText">{this.state.textCroatia}</p>
+      <h2 className="shortInfoTitle">{shortInfo.titleCroatia}</h2>
+      <p className="shortInfoText">{shortInfo.textCroatia}</p>
       </div>
       </div>
       <div className="tagBox">
