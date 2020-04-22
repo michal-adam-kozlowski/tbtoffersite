@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import Popup from './PopUp.js';
-import "./PopUp.scss";
+import YachtsPopup from './YachtsPopUp.js';
+import "./YachtsPopUp.scss";
 
-class PopUpContent extends Component {
+class YachtsPopUpContent extends Component {
 
   constructor(props){
 super(props);
@@ -21,7 +21,7 @@ this.setState({
 return (
 <div className="popUpContent">
 <div className="popUpBox" onClick={this.togglePopup.bind(this)}></div>
-{this.state.showPopup ? <Popup content={this.props.content} closePopup={this.togglePopup.bind(this)} /> : null}
+{this.state.showPopup ? <YachtsPopup content={this.props.content} closePopup={this.togglePopup.bind(this)} /> : null}
 
 </div>
 
@@ -29,4 +29,4 @@ return (
 }
 }
 
-export default PopUpContent;
+export default YachtsPopUpContent;

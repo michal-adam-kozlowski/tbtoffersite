@@ -13,6 +13,10 @@ $--tab-p-color-grey: #060606a1;
   margin-bottom: 40px;
 }
 
+#catamaran {
+  justify-content: space-evenly;
+}
+
 .tabBtn:focus, .tabBtn:hover {
  color: $--tab-color-blue;
  font-weight: 600;

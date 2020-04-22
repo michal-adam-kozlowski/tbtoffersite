@@ -33,7 +33,7 @@ const Tabs = props => {
   );
 };
 
-export default function TabsMenu() {
+function TabsMenu() {
   return (
     <div className="tabsMenu">
       <h3><div className="numberBox"><p className="numberText">2</p></div>Wybierz jedną z opcji rezerwacji</h3>
@@ -57,3 +57,5 @@ export default function TabsMenu() {
     </div>
   );
 }
+
+export default TabsMenu
