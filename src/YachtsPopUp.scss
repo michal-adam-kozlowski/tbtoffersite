@@ -1,4 +1,4 @@
-h1 {
+.popupInner h1 {
   text-align: center;
   font-weight: 500;
 }
@@ -91,12 +91,13 @@ button .fa, button .fas {
 @media only screen and (max-width: 484px) {
   .popupInner {
     border-top: none;
+    border: white;
   }
   button .fa, button .fas {
-    padding-top: 0;
+    padding: 20px;
   }
 
-  h1 {
+  .popupInner h1 {
     font-size: 25px;
     margin-top: 30px;
 }

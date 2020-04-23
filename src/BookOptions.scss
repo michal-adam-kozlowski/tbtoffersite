@@ -147,6 +147,11 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
 }
 
 @media only screen and (max-width: 767px) {
+
+  .bookOptionsComponent {
+    flex-wrap: wrap;
+  }
+
   .tabsMenu .tabText h3 {
     text-align: center;
   }

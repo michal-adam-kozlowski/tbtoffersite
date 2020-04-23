@@ -41,3 +41,9 @@ $sColor: rgba(0, 0, 0, 0.32);
     box-shadow: 4px 11px 30px -4px $sColor;
     object-fit: cover;
 }
+
+@media only screen and (max-width: 991px) {
+  .testimonialsWrapper div {
+    margin-top: 20px;
+  }
+}
