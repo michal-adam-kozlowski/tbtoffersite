@@ -63,7 +63,7 @@ function GenerateTestimonialsArr() {
 class TestimonialsWrapper extends Component {
     render () {
         return (
-            <div className='testimonialsWrapper'>
+            <div className='testimonialsWrapper' id="testimonials">
                     {GenerateTestimonialsArr().map((el) =>
                         <Testimonial image={el.image} name={el.name} text={el.testimonial_text}/>
                     )}
@@ -73,4 +73,6 @@ class TestimonialsWrapper extends Component {
     }
 }
 
+
 export default TestimonialsWrapper;
+

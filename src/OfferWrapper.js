@@ -4,7 +4,6 @@ import ShortInfo from './ShortInfo.js';
 import HighLights from "./HighLights.js";
 import Map from "./Map.js";
 import Reservation from "./Reservation.js";
-import Testimonials from "./Testimonials.js";
 import BookBtn from "./BookBtn.js";
 import './OfferWrapper.scss';
 import './Hero.scss';
@@ -19,11 +18,11 @@ function OfferWrapper() {
             <Menu />
             <div className="container">
             <ShortInfo/>
-            <HighlightsWrapper/>
             <Map/>
             <Reservation/>
             <TestimonialsWrapper/>
             <BookBtn />
+
         </div>
         </div>
     );

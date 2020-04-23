@@ -23,7 +23,7 @@ const data = [
 class Accordion extends React.Component {
   render () {
     return (
-      <div {...{ className: 'wrapper' }}>
+      <div {...{ className: 'accordionWrapper' }}>
         <ul {...{ className: 'accordionList' }}>
           {data.map((data, key) => {
             return (

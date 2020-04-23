@@ -3,6 +3,7 @@ import CruiseName from './CruiseName.js';
 import Tag from './Tag.js';
 import TagTravel from './TagTravel.js';
 import './ShortInfo.scss';
+import HighlightsWrapper from "./HighlightsWrapper";
 
 
 class ShortInfo extends React.Component {
@@ -11,7 +12,7 @@ class ShortInfo extends React.Component {
     titleCroatia: "Chorwacja Północna",
     textCroatia: "Chorwacja Północna jest niesamowita! Piękne miasteczka, urokliwe zatoczki, zieleńsze wyspy. Pływamy całą flotą, wszyscy młodzi, piękni i opaleni. Zwiedzamy najpiękniejsze i niedostępne od strony lądu zakątki Chorwacji, snorkelujemy, jemy świeże owoce morza. Zapraszamy!",
     titleTravelInfo: "Travel Info"
-  }
+  };
 
   render() {
 
@@ -43,6 +44,7 @@ class ShortInfo extends React.Component {
       <Tag singleTag={taginfo[2]}/>
       <Tag singleTag={taginfo[3]}/>
       </div>
+        <HighlightsWrapper/>
       <h3 className="travelInfoTitle">Travel Info</h3>
       <div className="tagBoxTravel">
       <TagTravel singleTag={travelinfo[0]}/>

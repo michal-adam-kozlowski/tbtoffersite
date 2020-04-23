@@ -5,7 +5,7 @@ import $ from 'jquery';
 
 var highlightsArr = [
     {
-        name : 'Wyjątkowe wybrzeże',
+        name : 'Krajobrazy',
         image : './img/highlight_cliffs.jpg',
         text : 'Wysokie kliffy, z których można skakać wprost do błękitnego i ciepłego morza',
         tagParty : false,
@@ -86,7 +86,7 @@ var highlightsArr = [
         tagSightseeing : false
     },
     {
-        name : 'Pływanie we flocie',
+        name : 'Flota jachtów',
         image : './img/highlight_yacht_round.jpg',
         text : 'Flota jachtów, wspólne przerwy i noclegi - niezapomniane przeżycie',
         tagParty : false,
@@ -259,7 +259,7 @@ class HighlightsWrapper extends Component {
 
 
             return (
-                <div className='main'>
+                <div className='main' id='highlights'>
                     <div className='highlightsMenu'>
                         <div className={ (this.state.tag ==='all') ? "higlightsMenuTagsActive" : "higlightsMenuTags"} onClick={this.handleAll}>All</div>
                         <div className='higlightsMenuTags' onClick={this.handleParty}>Party</div>
@@ -286,5 +286,3 @@ class HighlightsWrapper extends Component {
 }
 
 export default HighlightsWrapper;
-
-
