@@ -7,14 +7,18 @@ class Payment extends React.Component {
   render(){
     return(
       <div className="paymentComponent" id="payment">
-      <h3><div className="numberBox"><p className="numberText">3</p></div>Sprawdź, jak wygląda system płatności</h3>
-      <div className="paymentContent">
+       <div className="titleReservations">
+        <div className="numberBox">
+          <p className="numberText">3</p>
+        </div>
+          <h3>Sprawdź, jak wygląda system płatności</h3>
+        </div>
+       <div className="paymentContent">
         <Chart />
         <Acc />
+       </div>
       </div>
-      </div>
-
     )
-}}
-
+  }
+}
 export default Payment

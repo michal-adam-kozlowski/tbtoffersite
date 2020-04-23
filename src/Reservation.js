@@ -1,14 +1,14 @@
 import React from 'react';
-import TabsMenu from "./BookOptions.js";
+import BookOptionsWrapper from "./BookOptionsWrapper.js";
 import YachtsWrapper from "./YachtsWrapper.js";
 import Payment from "./Payment.js";
 
 function Reservation() {
     return (
         <div id="reservation">
-         <YachtsWrapper />
-         <TabsMenu />
-         <Payment />
+           <YachtsWrapper />
+           <BookOptionsWrapper />
+           <Payment />
         </div>
     );
 }

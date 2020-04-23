@@ -3,6 +3,10 @@ $--bg-color-grey: #333333;
 $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
 
 
+.bookOptionsComponent {
+  display: flex;
+}
+
 .tabsMenu {
   width: 700px;
   margin: 0 auto;
@@ -58,6 +62,15 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
   width: 35px;
   margin-bottom: 20px;
   }
+
+.titleReservations {
+  justify-content: center;
+  text-align: center;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .numberBox {
   width: 40px;

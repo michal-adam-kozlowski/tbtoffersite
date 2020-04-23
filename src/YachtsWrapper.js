@@ -187,8 +187,12 @@ function YachtWrapper(props) {
     <div id="yachtMenu" className="tabsMenu">
       <h2>Jak to działa?</h2>
       <h4>Krok po kroku</h4>
-        <h3><div className="numberBox"><p className="numberText">1</p>
-          </div>Wybierz jednostkę a następnie klasę jachtu</h3>
+      <div className="titleReservations">
+          <div className="numberBox">
+            <p className="numberText">1</p>
+        </div>
+          <h3>Wybierz jednostkę a następnie klasę jachtu</h3>
+          </div>
         <Tabs>
         <div title="Jacht">
           <div className="classBox">
@@ -207,5 +211,4 @@ function YachtWrapper(props) {
     </div>
   );
 }
-
 export default YachtWrapper
