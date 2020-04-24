@@ -15,11 +15,10 @@ const travelInfo = [
   class: "fas fa-bus"},
 ];
 
-class TagWrapper extends React.Component {
+class TagTravelWrapper extends React.Component {
   render() {
     return (
-      <div>
-        <h3 className="travelInfoTitle">Travel Info</h3>
+      <div className="tagTravelWrapper">
         <div className="tagTravelBox">
           <TagTravel singleTag={travelInfo[0]}/>
           <TagTravel singleTag={travelInfo[1]}/>
@@ -29,4 +28,4 @@ class TagWrapper extends React.Component {
   }
 }
 
-export default TagWrapper
+export default TagTravelWrapper

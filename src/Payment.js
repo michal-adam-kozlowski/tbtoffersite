@@ -11,7 +11,7 @@ class Payment extends React.Component {
         <div className="numberBox">
           <p className="numberText">3</p>
         </div>
-          <h3>Sprawdź, jak wygląda system płatności</h3>
+          <h3>Sprawdź cenę i system platności</h3>
         </div>
        <div className="paymentContent">
         <Chart />

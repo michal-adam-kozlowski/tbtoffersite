@@ -95,7 +95,7 @@ const katComfort = {
   image: require("./img/kat-comfort.jpg"),
   name: "Comfort",
   name2: "Katamaran klasy Comfort",
-  price: "2090 PLN",
+  price: "2090",
   person: "12",
   year: "2014 lub nowszy",
   amenities: {
@@ -122,7 +122,7 @@ const katPremier = {
   image: require("./img/kat-premier.jpg"),
   name: "Premier",
   name2: "Katamaran klasy Premier",
-  price: "2290 PLN",
+  price: "2290",
   person: "12",
   year: "2014 lub nowszy",
   amenities: {
@@ -192,6 +192,7 @@ function YachtWrapper(props) {
             <p className="numberText">1</p>
         </div>
           <h3>Wybierz jednostkę a następnie klasę jachtu</h3>
+          <p>Nowoczesne jachty to ekwiwalent pięknych apartamentów, tylko mobilnych - pływających! Wygodne i bezpieczne, w pełni wyposażone we wszystko niezbędne do życia. Podróżowanie nigdy nie było tak przyjemne!</p>
           </div>
         <Tabs>
         <div title="Jacht">

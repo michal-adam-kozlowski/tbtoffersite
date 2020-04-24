@@ -12,16 +12,16 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
 .singleTag {
   display: flex;
   margin-bottom: 20px;
-  width: 250px;
+  width: 300px;
   background-color: white;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: $--box-shadow;
 }
 
 .singleTag .fa,.singleTag .fas {
-  font-size: 30px;
+  font-size: 25px;
   margin-right: 10px;
+  color: #504e4e;
 }
 
 .singleTag img {

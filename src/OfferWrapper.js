@@ -7,6 +7,7 @@ import BookBtn from "./BookBtn.js";
 import './OfferWrapper.scss';
 import './Hero.scss';
 import HighlightsWrapper from "./HighlightsWrapper";
+import TagTravelWrapper from "./TagTravelWrapper.js";
 import TestimonialsWrapper from './TestimonialsWrapper'
 
 
@@ -19,6 +20,7 @@ function OfferWrapper() {
             <HighlightsWrapper />
             <Map />
             <Reservation />
+            <TagTravelWrapper />
             <TestimonialsWrapper />
             <BookBtn />
         </div>

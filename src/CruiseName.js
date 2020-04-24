@@ -15,6 +15,10 @@ class CruiseName extends React.Component {
         <div className="cruiseTypeBox">
           <i class="far fa-compass"></i><h3 className="cruiseType">{this.props.cruise.cruiseType}</h3>
         </div>
+        <div className="cruisePriceBox">
+          <h3 className="cruisePrice">od {this.props.cruise.cruisePrice}</h3>
+        </div>
+
       </div>)
   };
 };

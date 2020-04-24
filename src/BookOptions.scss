@@ -1,5 +1,5 @@
-$--font-color-blue: #114173;
-$--bg-color-grey: #333333;
+$--font-color-green: #09874d;
+$--bg-color-grey: #504e4e;
 $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
 
 
@@ -18,7 +18,7 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
   text-align: center;
   font-size: 20px;
   margin-bottom: 0;
-  color: $--font-color-blue;
+  color: $--font-color-green;
   font-weight: 600;
 }
 
@@ -33,6 +33,7 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
 .tabsMenu h4 {
   margin-top: 0;
   text-align: center;
+  font-weight: 600;
 }
 
 .tabsMenu .tabText {
@@ -47,7 +48,7 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
 
 .tabsMenu .tabText h4 {
   text-align: left;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   margin: 10px 0;
 }
@@ -70,6 +71,14 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 90vw;
+  width: 700px;
+  margin: auto;
+
+  p {
+    font-weight: 400;
+    margin-bottom: 30px;
+  }
 }
 
 .numberBox {
@@ -103,8 +112,9 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
   background: transparent;
   outline: none;
   cursor: pointer;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 500;
+  color: #333333;
 }
 
 .tabIndicatorContainer {
@@ -116,7 +126,7 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
 
 .tabIndicator {
   height: 3px;
-  background: $--font-color-blue;
+  background: $--font-color-green;
   transition: transform 0.2s;
 }
 
@@ -139,6 +149,7 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
   line-height: 1.5;
   margin: 20px;
   font-size: 120px;
+  color: #504e4e;
   }
 
 .tabText p {

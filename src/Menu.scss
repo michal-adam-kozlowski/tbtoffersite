@@ -38,20 +38,21 @@ html {
 
   a {
     text-decoration: none;
-    color: #114173;
     font-weight: 500;
     font-size: 18px;
-    opacity: 0.7;
+    opacity: 0.85;
+    color: #333333;
   }
 
   a:hover {
     opacity: 1;
   }
+
 }
 
 .book {
   border-radius: 10px;
-  background-color: #4FC4F6;
+  background-color: #09874d;
   transition: all 0.5s;
 
 }

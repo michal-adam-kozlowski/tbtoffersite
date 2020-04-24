@@ -1,7 +1,6 @@
 import React from 'react';
-import TagWrapper from "./TagWrapper.js"
-import TagTravelWrapper from "./TagTravelWrapper.js"
-import ShortInfo from "./ShortInfo.js"
+import TagWrapper from "./TagWrapper.js";
+import ShortInfo from "./ShortInfo.js";
 import CruiseNameWrapper from "./CruiseNameWrapper";
 import './ShortInfo.scss';
 
@@ -19,7 +18,6 @@ class ShortInfoWrapper extends React.Component {
           <ShortInfo info={shortInfo} />
         </div>
           <TagWrapper />
-          <TagTravelWrapper />
       </div>
     )
   }

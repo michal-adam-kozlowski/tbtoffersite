@@ -1,5 +1,11 @@
 $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
 
+.tagTravelWrapper {
+  margin: auto;
+  width: 90%;
+  padding-top: 150px;
+}
+
 .tagTravelBox {
   display: flex;
   justify-content: flex-start;
@@ -16,12 +22,12 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
   padding: 10px;
   border-radius: 10px;
   margin-right: 30px;
-  box-shadow: $--box-shadow;
 }
 
 .singleTagTravel .fa,.singleTagTravel .fas {
-  font-size: 30px;
+  font-size: 25px;
   padding: 10px;
+  color: #504e4e;
 }
 
 .singleTagTravel img {

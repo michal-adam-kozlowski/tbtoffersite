@@ -9,8 +9,8 @@ class Yachts extends Component {
          <div className="classBoxSingle">
            <div className="imageYacht"><img src={(this.props.textComponent.image)} alt={""} /></div>
            <div className="textComponent">
-           <h3>{this.props.textComponent.name}</h3>
-             <p>{this.props.textComponent.price}/osoba</p>
+           <h3>{this.props.textComponent.name} / {this.props.textComponent.price} PLN </h3>
+
            <h4>Liczba miejsc</h4>
              <p>{this.props.textComponent.person}</p>
            <h4>Rocznik jachtu</h4>

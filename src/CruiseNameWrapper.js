@@ -5,7 +5,8 @@ import './CruiseName.scss';
 const cruiseInfo = {
   cruiseName: "Chorwacja Trasa Północna",
   cruiseDate: "11.07.2020 - 18.07.2020",
-  cruiseType: "Sail & Party"
+  cruiseType: "Sail & Party",
+  cruisePrice: "1590 PLN"
 };
 
 class CruiseNameWrapper extends React.Component {

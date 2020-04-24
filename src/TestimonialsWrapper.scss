@@ -4,12 +4,29 @@ $fFamily: Georgia,
 serif;
 $borderImg: rgb(248, 248, 248);
 $sColor: rgba(0, 0, 0, 0.32);
+
+#testimonials {
+  padding-top: 160px;
+  margin-top: -50px;
+}
+
+.testimonialsTitle {
+  text-align: center;
+  text-align: center;
+  width: 600px;
+  max-width: 90vw;
+  margin: auto;
+  margin-bottom: 100px;
+
+h3 {
+  font-weight: 500;
+}
+
+}
 .testimonialsWrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding-top: 250px;
-    margin-top: 50px;
 }
 
 .testimonialsWrapper div {

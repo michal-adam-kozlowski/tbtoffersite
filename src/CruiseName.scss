@@ -6,11 +6,15 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
   padding: 20px;
   border-radius: 10px;
   width: 400px;
-  padding-top: 30px;
+  padding-top: 35px;
   box-shadow: $--box-shadow;
 }
 
-.cruiseName, .cruiseDate, .cruiseType {
+.cruiseNameComponent > div {
+  display: flex;
+}
+
+.cruiseNameComponent > div > h3 {
   font-weight: 500;
   margin-top: 0;
   font-size: 20px;
@@ -18,19 +22,34 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
   line-height: 1.5;
 }
 
-.cruiseNameBox, .cruiseDateBox, .cruiseTypeBox {
-  display: flex;
-}
-
-.cruiseNameBox img, .cruiseDateBox img, .cruiseTypeBox img {
+.cruiseNameComponent > div > img {
   width: 27px;
   height: 20px;
   margin-top: 5px;
 }
 
-.far {
+.cruiseNameComponent > div > i {
   font-size: 30px;
+  color: #504e4e;
 }
+
+.cruisePriceBox {
+  display: flex;
+  justify-content: center;
+}
+
+.cruisePriceBox .cruisePrice {
+  margin-left: 0;
+  margin-bottom: 0;
+  font-size: 25px;
+  border-top: 1px solid grey;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  color: #09874d;
+  padding-bottom: 0;
+}
+
 
 @media only screen and (max-width: 767px) {
 .cruiseNameBox {

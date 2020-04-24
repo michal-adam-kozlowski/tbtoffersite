@@ -63,10 +63,17 @@ function GenerateTestimonialsArr() {
 class TestimonialsWrapper extends Component {
     render () {
         return (
-            <div className='testimonialsWrapper' id="testimonials">
+          <div id="testimonials">
+          <div className="testimonialsTitle">
+          <h3>Przeczytaj opinie naszych klientów</h3>
+          <p>Nie musisz nam wierzyć na słowo - sprawdź co piszą osoby, które podróżowały z nami w poprzednich sezonach. </p>
+          </div>
+            <div className='testimonialsWrapper' >
                     {GenerateTestimonialsArr().map((el) =>
                         <Testimonial image={el.image} name={el.name} text={el.testimonial_text}/>
                     )}
+
+            </div>
             </div>
         )
 
