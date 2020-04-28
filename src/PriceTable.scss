@@ -1,0 +1,71 @@
+$--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
+
+.tableComponent {
+    margin: auto;
+    margin-top: 100px;
+    // width: 90%;
+    display: flex;
+    justify-content: center;
+
+    h3 {
+        text-align: center;
+        font-weight: 500;
+        margin-top: 50px;
+    }
+}
+
+// .tableComponent > div {
+    // width: 45%;
+    // box-shadow: $--box-shadow;
+    // border-radius: 10px;
+// }
+
+.priceTable {
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+}
+
+.priceTable > div {
+   
+    p {
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.2);
+        color: black;
+
+        span {
+            display: inline-block;
+            margin-left: 5px;
+            font-size: 13px;
+        }
+    }
+
+    i.fa.fa-check {
+        padding-right: 15px;
+        color: #09874d;
+    }
+
+    i.fas.fa-plus {
+        padding-right: 15px;
+        color: #504e4e;
+    }
+}
+
+.includedTable > div > div.firstColumn > p:nth-child(3) {
+    display: none;
+}
+
+@media only screen and (max-width: 484px) {
+    .priceTable {
+        flex-direction: column;
+        width: 400px;
+        max-width: 90vw;
+    }
+
+    .priceTable > div {
+        // width: 100%;
+        margin-bottom: -15px;
+    }
+}

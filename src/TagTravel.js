@@ -4,15 +4,15 @@ import './TagTravel.scss';
 
 class TagTravel extends Component {
 
-    render () {
+    render() {
 
         return <div className="singleTagTravel">
-          <i class={this.props.singleTag.class}></i>
-         <div className="tagTextBox">
-         <p className="tagTitle">{this.props.singleTag.tagTitle}</p>
-         <p className="tagText">{this.props.singleTag.text} </p>
-         </div>
-         </div>
+            <div className="iconTravel"><i class={this.props.singleTag.class}></i></div>
+            <div className="tagTextBox">
+                <p className="tagTitle">{this.props.singleTag.tagTitle}<span>{this.props.singleTag.title}</span></p>
+                <p className="tagText">{this.props.singleTag.text} </p>
+            </div>
+        </div>
     }
 }
 

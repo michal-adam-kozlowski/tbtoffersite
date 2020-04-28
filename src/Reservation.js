@@ -8,7 +8,7 @@ function Reservation() {
         <div id="reservation">
            <YachtsWrapper />
            <BookOptionsWrapper />
-           <Payment />
+           <Payment /> 
         </div>
     );
 }

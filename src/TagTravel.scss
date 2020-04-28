@@ -3,32 +3,55 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
 .tagTravelWrapper {
   margin: auto;
   width: 90%;
-  padding-top: 150px;
+  margin-top: 60px;
+  h3 {
+    text-align: center;
+    font-weight: 500;
+  }
 }
 
 .tagTravelBox {
+  margin-top: 100px;
+  box-shadow: $--box-shadow;
+  padding: 25px;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   margin-top: 40px;
   flex-wrap: wrap;
   margin-right: 10px;
+  text-align: justify;
+  border-radius: 10px;
 }
 
 .singleTagTravel {
   display: flex;
   margin-bottom: 20px;
-  width: 400px;
+  width: 350px;
   background-color: white;
   padding: 10px;
-  border-radius: 10px;
-  margin-right: 30px;
 }
 
-.singleTagTravel .fa,.singleTagTravel .fas {
+.singleTagTravel .fa,
+.singleTagTravel .fas {
   font-size: 25px;
   padding: 10px;
   color: #504e4e;
 }
+
+.tagTitle span {
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+// .fas.fa-wifi,
+// .fas.fa-user-friends {
+//   padding-right: 5px;
+// }
+
+// .tagTextBox {
+//   width: 300px;
+// }
 
 .singleTagTravel img {
   width: 40px;
@@ -36,7 +59,18 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
   margin-right: 20px;
 }
 
+.iconTravel {
+  min-width: 50px;;
+}
+
 @media only screen and (max-width: 767px) {
+  .tagTravelWrapper {
+    width: auto;
+  }
+
+  .tagTravelBox {
+    margin-right: 0;
+  }
   .singleTagTravel {
     width: auto;
     margin-right: 0;

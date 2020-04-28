@@ -2,15 +2,18 @@ $cAccent: #3978EF;
 $cBlack: #121212;
 $cGray: #333;
 $cLightGray: rgba(#000, 0.1);
-$--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
+$--box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.32);
+$--box-shadow-light: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
+$-bgComponent: #6d656514;
+$-bgComponent-default: white;
 
 .accordionList{
   list-style: none;
   padding: 0;
-  background-color: #fff;
+  background-color: $-bgComponent-default;
   border-radius: 0.4rem;
   overflow: hidden;
-  box-shadow: $--box-shadow;
+  box-shadow: $--box-shadow-light;
   margin: 0;
 
   &-item{

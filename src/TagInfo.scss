@@ -1,9 +1,12 @@
 .tagInfoWrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .tagInfoComponent {
-  display: flex;
+  display: inline-flex;
+  padding-top: 15px;
+
 
   p {
     font-size: 15px;
@@ -15,7 +18,7 @@
 
   i {
     font-size: 25px;
-    padding: 0 10px;
+    padding: 0 5px;
   }
 }
 
@@ -23,6 +26,17 @@
   border-right: 1px solid grey;
 }
 
+.fas.fa-ship {
+  padding-left: 0;;
+}
+
 .tagInfoWrapper > .tagInfoComponent:nth-child(4) > i:first-child {
   border: none;
+  padding-left: 0;
+}
+
+@media only screen and (max-width:767px) {
+  .tagInfoWrapper {
+    padding-left: 25px;
+}
 }
