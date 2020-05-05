@@ -2,7 +2,7 @@ import React from 'react';
 import './Tag.scss';
 import Tag from "./Tag.js"
 
-const tagInfo = [
+const tagInfoArr = [
 {
   name: "Flota",
   tagTitle: "Flota jachtów",
@@ -33,10 +33,9 @@ class TagWrapper extends React.Component {
   render() {
     return (
       <div className="tagBox">
-        <Tag singleTag={tagInfo[0]}/>
-        <Tag singleTag={tagInfo[1]}/>
-        <Tag singleTag={tagInfo[2]}/>
-        <Tag singleTag={tagInfo[3]}/>
+       {tagInfoArr.map((singleTag) =>
+         <Tag class={singleTag.class} name={singleTag.tagTitle} text={singleTag.text}/>
+                    )}
       </div>
     )
   }

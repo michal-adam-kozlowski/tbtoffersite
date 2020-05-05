@@ -2,13 +2,13 @@ import React from 'react';
 import './Tag.scss';
 import TagTravel from "./TagTravel.js"
 
-const travelInfo = [
-  {
-    name: "Samolot",
-    tagTitle: "Lot do Zadaru",
-    text: "Z Zadaru do Sukosanu można łatwo dojechać regularnie kursującymi autobusami.",
-    class: "fas fa-plane"
-  },
+const travelTagArr = [
+  // {
+  //   name: "Samolot",
+  //   tagTitle: "Lot do Zadaru",
+  //   text: "Z Zadaru do Sukosanu można łatwo dojechać regularnie kursującymi autobusami.",
+  //   class: "fas fa-plane"
+  // },
   {
     class: "fas fa-bus",
     tagTitle: "Transport",
@@ -56,13 +56,9 @@ class TagTravelWrapper extends React.Component {
       <div className="tagTravelWrapper">
         <h3>Koszt dodatkowy:</h3>
         <div className="tagTravelBox">
-          <TagTravel singleTag={travelInfo[1]} />
-          <TagTravel singleTag={travelInfo[2]} />
-          <TagTravel singleTag={travelInfo[3]} />
-          <TagTravel singleTag={travelInfo[4]} />
-          <TagTravel singleTag={travelInfo[5]} />
-          <TagTravel singleTag={travelInfo[6]} />
-          <TagTravel singleTag={travelInfo[7]} />
+          {travelTagArr.map((singleTag) =>
+            <TagTravel class={singleTag.class} tagTitle={singleTag.tagTitle} title={singleTag.title} text={singleTag.text} />
+          )}
         </div>
       </div>
     )

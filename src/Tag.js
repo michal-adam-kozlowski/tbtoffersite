@@ -5,10 +5,10 @@ class Tag extends Component {
     render () {
         return (
         <div className="singleTag">
-         <div className="iconTravel"><i class={this.props.singleTag.class}></i></div>
+         <div className="iconTravel"><i class={this.props.class}></i></div>
            <div className="tagTextBox">
-             <p className="tagTitle">{this.props.singleTag.tagTitle}</p>
-             <p className="tagText">{this.props.singleTag.text} </p>
+             <p className="tagTitle">{this.props.tagTitle}</p>
+             <p className="tagText">{this.props.text} </p>
            </div>
         </div>
        )

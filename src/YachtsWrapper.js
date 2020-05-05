@@ -5,7 +5,8 @@ import "./BookOptions.scss";
 import "./Yachts.scss";
 
 
-const yachtComfort = {
+const yachtsArr = [
+   {
   image: require("./img/comfort.jpg"),
   name: "Comfort",
   name2: "Jacht klasy Comfort",
@@ -31,9 +32,9 @@ const yachtComfort = {
     third: require("./img/comfort-44.jpg"),
     fourth: require("./img/comfort-55.jpg")
   }
-};
+},
 
-const yachtPremier = {
+ {
   image: require("./img/premier.jpg"),
   name: "Premier",
   name2: "Jacht klasy Premier",
@@ -59,9 +60,9 @@ const yachtPremier = {
     third: require("./img/premier-44.jpg"),
     fourth: require("./img/premier-55.jpg")
   }
-};
+},
 
-const yachtPremierPlus = {
+{
   image: require("./img/premier-plus.jpg"),
   name: "Premier +",
   name2: "Jacht klasy Premier+",
@@ -89,9 +90,9 @@ const yachtPremierPlus = {
     fourth: require("./img/premier-plus-55.jpg")
   }
 
-};
+},
 
-const katComfort = {
+ {
   image: require("./img/kat-comfort.jpg"),
   name: "Comfort",
   name2: "Katamaran klasy Comfort",
@@ -116,9 +117,9 @@ const katComfort = {
     third: require("./img/kat-comfort-44.jpg"),
     fourth: require("./img/kat-comfort-55.jpg")
   }
-};
+},
 
-const katPremier = {
+ {
   image: require("./img/kat-premier.jpg"),
   name: "Premier",
   name2: "Katamaran klasy Premier",
@@ -145,7 +146,8 @@ const katPremier = {
     third: require("./img/kat-premier-44.jpg"),
     fourth: require("./img/kat-premier-55.jpg")
 }
-};
+ }
+]
 
 
 // const katPremierPlus = {
@@ -197,15 +199,15 @@ function YachtWrapper(props) {
         <Tabs>
         <div title="Jacht">
           <div className="classBox">
-            <div><Yachts textComponent={yachtComfort}/> <YachtsPopUpContent content={yachtComfort}/></div>
-            <div><Yachts textComponent={yachtPremier} /> <YachtsPopUpContent content={yachtPremier}/> </div>
-            <div><Yachts textComponent={yachtPremierPlus}/> <YachtsPopUpContent content={yachtPremierPlus}/> </div>
+            <div><Yachts textComponent={yachtsArr[0]}/> <YachtsPopUpContent content={yachtsArr[0]}/></div>
+            <div><Yachts textComponent={yachtsArr[1]} /> <YachtsPopUpContent content={yachtsArr[1]}/> </div>
+            <div><Yachts textComponent={yachtsArr[2]}/> <YachtsPopUpContent content={yachtsArr[2]}/> </div>
           </div>
         </div>
         <div title="Katamaran">
           <div className="classBox" id="catamaran">
-            <div><Yachts textComponent={katComfort}/> <YachtsPopUpContent content={katComfort}/> </div>
-            <div><Yachts textComponent={katPremier}/> <YachtsPopUpContent content={katPremier}/> </div>
+            <div><Yachts textComponent={yachtsArr[3]}/> <YachtsPopUpContent content={yachtsArr[3]}/> </div>
+            <div><Yachts textComponent={yachtsArr[4]}/> <YachtsPopUpContent content={yachtsArr[4]}/> </div>
           </div>
         </div>
         </Tabs>
