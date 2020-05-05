@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import BookOptions from "./BookOptions.js";
 import "./BookOptions.scss";
+import CheckPrice from "./CheckPrice.js"
 
 const bookArr = [
   {
@@ -60,8 +61,8 @@ const Tabs = props => {
 class BookOptionsWrapper extends React.Component {
   render() {
     return (
-      <div className="tabsMenu">
-        <div className="titleReservations">
+      <div className="tabsMenu" id="bookOptions">
+        <div className="titleReservations" >
           <div className="numberBox">
             <p className="numberText">2</p>
           </div>
@@ -70,14 +71,18 @@ class BookOptionsWrapper extends React.Component {
         <Tabs>
           <div title="Jacht">
             <BookOptions book={bookArr[0]} />
+            <CheckPrice/>
           </div>
           <div title="Kabina">
             <BookOptions book={bookArr[1]} />
+            <CheckPrice/>
           </div>
           <div title="Solo">
             <BookOptions book={bookArr[2]} />
+            <CheckPrice/>
           </div>
         </Tabs>
+        
       </div>
     );
   }

@@ -5,7 +5,7 @@ import "./BookOptions.scss";
 import "./Yachts.scss";
 
 
-const yachtsArr = [
+ export const yachtsArr = [
    {
   image: require("./img/comfort.jpg"),
   name: "Comfort",

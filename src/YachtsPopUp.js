@@ -42,8 +42,8 @@ class YachtsPopup extends React.Component {
           <div className="infoContent"><p>{this.props.content.info}</p>
             <p><strong>{this.props.content.info1Title}</strong></p>
             <p>{this.props.content.info1}</p>
-            <p><strong>{this.props.content.info2Title}</strong> {this.props.content.info2}</p>
-            <p><strong>{this.props.content.info3Title}</strong> {this.props.content.info3}</p>
+            <p><strong>{this.props.content.info2Title}</strong>{this.props.content.info2}</p>
+            <p><strong>{this.props.content.info3Title}</strong>{this.props.content.info3}</p>
             <p><strong>{this.props.content.info4Title}</strong>{this.props.content.info4}</p>
           </div>
           <button onClick={this.props.closePopup}><i class="fas fa-times"></i></button>
