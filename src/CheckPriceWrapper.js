@@ -184,8 +184,9 @@ class CheckPriceWrapper extends React.Component {
                 <CheckPriceYacht content={this.props.content} />
                 <CheckPriceCabin content={this.props.content} />
                 <CheckPriceSolo content={this.props.content} />
+                
               </div>
-              <button ><a href="#payment" onClick={this.props.closePopup}>Sprawdz system płatności</a></button>
+          
             </div>
           )}
       </div>

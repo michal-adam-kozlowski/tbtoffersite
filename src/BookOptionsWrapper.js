@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import BookOptions from "./BookOptions.js";
 import "./BookOptions.scss";
 import "./Popover.scss";
-import CheckPriceWrapper from "./CheckPriceWrapper.js";
-import { checkYachtArr } from "./CheckPriceWrapper.js"
 
 export const bookArr = [
   {

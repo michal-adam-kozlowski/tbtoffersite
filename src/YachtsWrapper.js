@@ -3,10 +3,6 @@ import Yachts from "./Yachts.js";
 import YachtsPopUpContent from "./YachtsPopUpContent.js";
 import "./BookOptions.scss";
 import "./Yachts.scss";
-import CheckPriceWrapper from "./CheckPriceWrapper.js"
-import { checkYachtArr } from "./CheckPriceWrapper.js";
-
-
 
 export const yachtsArr = [
   {

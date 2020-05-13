@@ -70,7 +70,7 @@ class YachtsPopup extends React.Component {
             <p><strong>{this.props.content.info4Title}</strong>{this.props.content.info4}</p>
             <BoodOptionsWrapper />
             <CheckPriceWrapper content={this.props.content} />
-            
+            <button ><a href="#payment" onClick={this.props.closePopup}>Sprawdz system płatności</a></button>
           </div>
           <button id="close" onClick={this.props.closePopup}><i class="fas fa-times"></i></button>
         </div>

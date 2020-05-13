@@ -16,7 +16,7 @@ class YachtsPopUpContent extends Component {
 
   }
 
-  render(props) {
+  render() {
 
     return (
       <div className="popUpContent">
