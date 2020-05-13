@@ -4,6 +4,10 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
 
 
 .bookOptionsComponent {
+  display: block;
+}
+
+.bookContent {
   display: flex;
 }
 
@@ -72,7 +76,6 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
   flex-direction: column;
   align-items: center;
   max-width: 90vw;
-  width: 700px;
   margin: auto;
 
   p {
@@ -132,7 +135,7 @@ $--box-shadow: 2px 3px 33px 3px rgba(184, 178, 184, 0.31);
 
 .tabContent {
   padding: 20px;
-  display: flex;
+  // display: flex;
   background-color: white;
   border-radius: 10px;
   box-shadow: $--box-shadow;

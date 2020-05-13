@@ -6,10 +6,9 @@ import Payment from "./Payment.js";
 function Reservation() {
     return (
         <div id="reservation">
-           <YachtsWrapper />
-           <BookOptionsWrapper />
-           
-           <Payment /> 
+            <YachtsWrapper />
+            <BookOptionsWrapper />
+            <Payment />
         </div>
     );
 }

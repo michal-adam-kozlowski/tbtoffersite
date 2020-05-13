@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import BookOptions from "./BookOptions.js";
 import "./BookOptions.scss";
-import CheckPrice from "./CheckPrice.js"
+import "./Popover.scss";
+import CheckPriceWrapper from "./CheckPriceWrapper.js";
+import { checkYachtArr } from "./CheckPriceWrapper.js"
 
-const bookArr = [
+export const bookArr = [
   {
     title: "Jacht",
     name: "Cały jacht (7-12 osób)",
@@ -11,7 +13,7 @@ const bookArr = [
     info: "Jeżeli chcesz zapisać się na rejs z całą swoją ekipią, skorzystaj z opcji rezerwuj cały jacht. Nie musicie mieć pojęcia o żeglowaniu - przydzielimy Wam skippera, który wszystkim się zajmie. I w sumie to najlepsze co możecie zrobić! Dlaczego? Bo jedziecie całą paczką i oszczędzacie do 120 PLN/os. w stosunku do zapisów indywidualnych."
   },
 
- {
+  {
     title: "Kabina",
     name: "Kabina (2 osoby)",
     icon: "fas fa-user-friends fa-7x",
@@ -71,18 +73,14 @@ class BookOptionsWrapper extends React.Component {
         <Tabs>
           <div title="Jacht">
             <BookOptions book={bookArr[0]} />
-            <CheckPrice/>
           </div>
           <div title="Kabina">
             <BookOptions book={bookArr[1]} />
-            <CheckPrice/>
           </div>
           <div title="Solo">
             <BookOptions book={bookArr[2]} />
-            <CheckPrice/>
           </div>
         </Tabs>
-        
       </div>
     );
   }

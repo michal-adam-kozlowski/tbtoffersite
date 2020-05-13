@@ -3,7 +3,17 @@ import "./BookOptions.scss";
 import "./Yachts.scss";
 import "./YachtsPopUp.scss";
 
+// window.onload = function() {
+  
+//   let btnCheck = document.getElementById("btnCheck");
+//   btnCheck.addEventListener("click", function() {
+//   return <PopoverY style={{display: 'block'}} />
+// })
+// }
+
+
 class Yachts extends Component {
+
   render() {
     return (
       <div className="classBoxSingle">
@@ -21,7 +31,8 @@ class Yachts extends Component {
             <li>{this.props.textComponent.amenities.second}</li>
             <li>{this.props.textComponent.amenities.third}</li>
           </ul>
-          <div className="buttonCheck" ><button><a href="#bookOptions">Oblicz cenę</a></button></div>
+          {/* <div id="buttonCheck" ><button id="btnCheck"><a href="#bookOptions">Oblicz cenę</a></button></div> */}
+          
         </div>
       </div>
     )

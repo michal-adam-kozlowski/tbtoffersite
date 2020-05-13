@@ -1,0 +1,28 @@
+.popover {
+  width: 100%;
+  padding-top: 50px;
+}
+
+.popover-container {
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+}
+
+
+#choose {
+  position: absolute;
+  z-index: 9999;
+  cursor: pointer;
+  height: 30px;
+}
+
+.infoContent #bookOptions > div.titleReservations {
+  display: none;
+
+}
+
