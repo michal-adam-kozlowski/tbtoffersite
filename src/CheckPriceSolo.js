@@ -66,8 +66,8 @@ class CheckPriceSoloWrapper extends React.Component {
 
         return (
             <div className="popover-container" ref={node => { this.node = node; }}>
-                <button id="choose" onClick={this.handleClick} href="#popOver">
-                    Sprawdź cenę
+                <button className="choose">
+                    <a href="#bottom" onClick={this.handleClick}> Sprawdź cenę</a>
                 </button>
                 {this.state.popupVisible && (
                     <div id="popOver" className="popover">

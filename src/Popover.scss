@@ -13,16 +13,17 @@
   cursor: pointer;
 }
 
-
-#choose {
+.choose {
   position: absolute;
   z-index: 9999;
   cursor: pointer;
   height: 30px;
+  a {
+    text-decoration: none;
+    color: #333333;
+  }
 }
 
 .infoContent #bookOptions > div.titleReservations {
   display: none;
-
 }
-

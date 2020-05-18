@@ -24,6 +24,10 @@ class YachtsPopup extends React.Component {
         return false;
       });
     });
+
+
+
+
   }
   render() {
     return (
@@ -95,8 +99,9 @@ class YachtsPopup extends React.Component {
                   <CheckPriceSoloWrapper content={this.props.content} />
                 </div>
               </Tabs>
+              <div id="bottom"></div>
             </div>
-            
+           
           </div>
           <button id="close" onClick={this.props.closePopup}><i className="fas fa-times"></i></button>
         </div>

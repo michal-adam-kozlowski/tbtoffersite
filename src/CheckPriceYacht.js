@@ -11,7 +11,7 @@ class CheckPriceYacht extends React.Component {
             var priceYacht = $(".price").data("price");
             var quantity = $(this).val();
             var fund = 10;
-        
+
             if (quantity > 12 || quantity < 7) {
                 document.getElementById("demo").innerHTML = "rezerwacja całego jachtu możliwa jest dla grupy od 7 do 12 osób";
                 $("#firstPayment").text(" PLN");
@@ -27,6 +27,12 @@ class CheckPriceYacht extends React.Component {
             }
 
         })
+
+        $("a[href='#bottom']").click(function () {
+            $("#bottom").animate({ scrollTop: $(".popover-container").height() }, "slow");
+            return false;
+        });
+
     }
 
     render() {
@@ -72,8 +78,8 @@ class CheckPriceYachtWrapper extends React.Component {
 
         return (
             <div className="popover-container" ref={node => { this.node = node; }}>
-                <button id="choose" onClick={this.handleClick} href="#popOver">
-                    Sprawdź cenę
+                <button className="choose">
+                    <a href="#bottom" onClick={this.handleClick}> Sprawdź cenę</a>
                 </button>
                 {this.state.popupVisible && (
                     <div id="popOver" className="popover">
