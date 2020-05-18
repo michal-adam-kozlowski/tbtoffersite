@@ -1,5 +1,6 @@
 import React from 'react';
 import "./CheckPrice.scss";
+import Accordion from "./PayAccordion.js";
 
 class CheckPriceCabin extends React.Component {
 
@@ -9,9 +10,13 @@ class CheckPriceCabin extends React.Component {
             <div className="checkPriceCabin">
                 <h4 className="title">{this.props.content.title.titleCabin}</h4>
                 <p className="price">Cena za osobę: {this.props.content.price} PLN</p>
-                <p >Fundusz turystyczny: 10 PLN</p>
-                <p className="description">Liczba osób: 2</p>
-                <p className="total">Łączna cena rezerwacji: <br></br> <span id="total"> {(this.props.content.price + 10) * 2} PLN</span></p>
+                <p className="price">Cena za kabinę: {this.props.content.price * 2} PLN</p>
+                <p >Fundusz turystyczny: 10 PLN/osoba</p>
+        <p className="description">Liczba osób: 2</p>
+                <p className="firstPayment">Pierwsza rata: <span id="firstPaymentCabin"> {(this.props.content.price * 2 + 20) * 0.3} PLN </span></p>
+                <p className="secondPayment">Druga rata: <span id="secondPaymentCabin"> {(this.props.content.price * 2 + 20) * 0.3} PLN </span></p>
+                <p className="thirdPayment">Trzecia rata: <span id="thirdPaymentCabin"> {(this.props.content.price * 2 + 20) * 0.4} PLN </span></p>
+                <p className="total">Łączna cena rezerwacji: <br></br> <span id="totalCabin"> {((this.props.content.price * 2 + 20))} PLN </span></p>
             </div>
         );
     }
@@ -47,7 +52,7 @@ class CheckPriceCabinWrapper extends React.Component {
                     <div id="popOver" className="popover">
                         <div className="checkPriceWrapper" id="checkPriceWrapper" >
                             <CheckPriceCabin content={this.props.content} />
-                            <button ><a href="#payment" onClick={this.props.closePopup}>Sprawdz system płatności</a></button>
+                            <Accordion />
                         </div>
                     </div>
                 )}

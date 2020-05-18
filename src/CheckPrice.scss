@@ -1,7 +1,7 @@
 
 
 .checkPriceWrapper {
-   
+    display: flex;
     > div {
         height: auto;
         width: 400px;
@@ -20,6 +20,16 @@
         }
     }
 }
+
+#demo {
+    color: red;
+}
+
+.total {
+    font-weight: 600;
+}
+
+
 
 #checkPriceWrapper > div:nth-child(1) {
     left: 0;

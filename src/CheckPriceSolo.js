@@ -2,6 +2,7 @@
 import React from 'react';
 import "./CheckPrice.scss";
 import $ from "jquery";
+import Accordion from "./PayAccordion.js";
 
 class CheckPriceSolo extends React.Component {
 
@@ -26,12 +27,12 @@ class CheckPriceSolo extends React.Component {
             <div className="checkPriceSolo">
                 <h4 className="title">{this.props.content.title.titleSolo}</h4>
                 <p className="price" data-price={this.props.content.price}>Cena za osobę: {this.props.content.price} PLN</p>
-                <p>Fundusz turystyczny: 10 PLN</p>
+                <p>Fundusz turystyczny: 10 PLN/osoba</p>
                 <p className="description">Liczba osób:</p>
                 <input type="text" className="quantity" ></input>
-                <p className="firstPayment">Pierwsza rata <br></br> <span id="firstPaymentSolo"> ... PLN </span></p>
-                <p className="secondPayment">Druga rata <br></br> <span id="secondPaymentSolo"> ... PLN </span></p>
-                <p className="thirdPayment">Trzecia rata <br></br> <span id="thirdPaymentSolo"> ... PLN </span></p>
+                <p className="firstPayment">Pierwsza rata: <span id="firstPaymentSolo"> ... PLN </span></p>
+                <p className="secondPayment">Druga rata: <span id="secondPaymentSolo"> ... PLN </span></p>
+                <p className="thirdPayment">Trzecia rata: <span id="thirdPaymentSolo"> ... PLN </span></p>
                 <p className="total">Łączna cena rezerwacji: <br></br> <span id="totalSolo">{this.props.content.price + 10} PLN</span></p>
             </div>
 
@@ -72,7 +73,7 @@ class CheckPriceSoloWrapper extends React.Component {
                     <div id="popOver" className="popover">
                         <div className="checkPriceWrapper" id="checkPriceWrapper" >
                             <CheckPriceSolo content={this.props.content} />
-                            <button ><a href="#payment" onClick={this.props.closePopup}>Sprawdz system płatności</a></button>
+                            <Accordion />
                         </div>
                     </div>
                 )}
