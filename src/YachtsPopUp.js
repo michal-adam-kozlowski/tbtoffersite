@@ -1,9 +1,9 @@
 import React from 'react';
 import './YachtsPopUp.scss';
 import "./YachtsPopUpInSlider.scss";
-import CheckPriceSolo from "./CheckPriceSolo.js";
-import CheckPriceYacht from "./CheckPriceYacht.js";
-import CheckPriceCabin from "./CheckPriceCabin.js";
+import CheckPriceSoloWrapper from "./CheckPriceSolo.js";
+import CheckPriceYachtWrapper from "./CheckPriceYacht.js";
+import CheckPriceCabinWrapper from "./CheckPriceCabin.js";
 import { bookArr, Tabs } from "./BookOptionsWrapper.js"
 import BookOptions from "./BookOptions.js";
 import $ from "jquery";
@@ -84,19 +84,19 @@ class YachtsPopup extends React.Component {
               <Tabs>
                 <div title="Jacht">
                   <BookOptions book={bookArr[0]} />
-                  <CheckPriceYacht content={this.props.content} />
+                  <CheckPriceYachtWrapper content={this.props.content} />
                 </div>
                 <div title="Kabina">
                   <BookOptions book={bookArr[1]} />
-                  <CheckPriceCabin content={this.props.content} />
+                  <CheckPriceCabinWrapper content={this.props.content} />
                 </div>
                 <div title="Solo">
                   <BookOptions book={bookArr[2]} />
-                  <CheckPriceSolo content={this.props.content} />
+                  <CheckPriceSoloWrapper content={this.props.content} />
                 </div>
               </Tabs>
             </div>
-            <button ><a href="#payment" onClick={this.props.closePopup}>Sprawdz system płatności</a></button>
+            
           </div>
           <button id="close" onClick={this.props.closePopup}><i className="fas fa-times"></i></button>
         </div>
