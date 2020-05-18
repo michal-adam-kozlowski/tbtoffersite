@@ -3,6 +3,7 @@ import Yachts from "./Yachts.js";
 import YachtsPopUpContent from "./YachtsPopUpContent.js";
 import "./BookOptions.scss";
 import "./Yachts.scss";
+// import CheckPriceWrapper from "./CheckPriceWrapper.js"
 
 export const yachtsArr = [
   {
@@ -223,15 +224,15 @@ function YachtWrapper(props) {
       <Tabs>
         <div title="Jacht">
           <div className="classBox">
-            <div><Yachts textComponent={yachtsArr[0]} /> <YachtsPopUpContent content={yachtsArr[0]} /></div>
-            <div><Yachts textComponent={yachtsArr[1]} /> <YachtsPopUpContent content={yachtsArr[1]} /></div>
-            <div><Yachts textComponent={yachtsArr[2]} /> <YachtsPopUpContent content={yachtsArr[2]} /></div>
+            <div><Yachts textComponent={yachtsArr[0]} /> <YachtsPopUpContent content={yachtsArr[0]} /> </div>
+            <div><Yachts textComponent={yachtsArr[1]} /> <YachtsPopUpContent content={yachtsArr[1]} /> </div>
+            <div><Yachts textComponent={yachtsArr[2]} /> <YachtsPopUpContent content={yachtsArr[2]} /> </div>
           </div>
         </div>
         <div title="Katamaran">
           <div className="classBox" id="catamaran">
-            <div><Yachts textComponent={yachtsArr[3]} /> <YachtsPopUpContent content={yachtsArr[3]} /></div>
-            <div><Yachts textComponent={yachtsArr[4]} /> <YachtsPopUpContent content={yachtsArr[4]} /></div>
+            <div><Yachts textComponent={yachtsArr[3]} /> <YachtsPopUpContent content={yachtsArr[3]} /> </div>
+            <div><Yachts textComponent={yachtsArr[4]} /> <YachtsPopUpContent content={yachtsArr[4]} /> </div>
           </div>
         </div>
       </Tabs>

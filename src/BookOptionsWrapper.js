@@ -26,7 +26,7 @@ export const bookArr = [
   }
 ]
 
-const Tabs = props => {
+export const Tabs = props => {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
   const activeTab = props.children[activeTabIndex];
   return (
