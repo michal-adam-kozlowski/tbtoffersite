@@ -28,8 +28,7 @@ class CheckPriceSolo extends React.Component {
                 <h4 className="title">{this.props.content.title.titleSolo}</h4>
                 <p className="price" data-price={this.props.content.price}>Cena za osobę: {this.props.content.price} PLN</p>
                 <p>Fundusz turystyczny: 10 PLN/osoba</p>
-                <p className="description">Liczba osób:</p>
-                <input type="text" className="quantity" ></input>
+                <p className="description">Liczba osób: <input type="text" className="quantity" ></input></p>
                 <p className="firstPayment">Pierwsza rata: <span id="firstPaymentSolo"> ... PLN </span></p>
                 <p className="secondPayment">Druga rata: <span id="secondPaymentSolo"> ... PLN </span></p>
                 <p className="thirdPayment">Trzecia rata: <span id="thirdPaymentSolo"> ... PLN </span></p>

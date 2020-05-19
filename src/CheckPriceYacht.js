@@ -42,13 +42,12 @@ class CheckPriceYacht extends React.Component {
                 <h4 className="title">{this.props.content.title.titleYacht}</h4>
                 <p className="price" data-price={this.props.content.price}>Cena za osobę: {this.props.content.price} PLN</p>
                 <p>Fundusz turystyczny: 10 PLN/osoba</p>
-                <p className="description">Wpisz liczbę osób:</p>
-                <input type="text" className="quantity" ></input>
+                <p className="description">Wpisz liczbę osób: <input type="text" className="quantity" ></input></p>
                 <p id="demo"></p>
                 <p className="firstPayment">Pierwsza rata: <span id="firstPayment"> ... PLN </span></p>
                 <p className="secondPayment">Druga rata: <span id="secondPayment"> ... PLN </span></p>
                 <p className="thirdPayment">Trzecia rata: <span id="thirdPayment"> ... PLN </span></p>
-                <p className="total">Łączna cena rezerwacji: <br></br> <span id="totalYacht"> .. PLN</span></p>
+                <p className="total">Łączna cena rezerwacji: <br></br> <span id="totalYacht">{this.props.content.price + 10} PLN</span></p>
             </div>
         );
     }
