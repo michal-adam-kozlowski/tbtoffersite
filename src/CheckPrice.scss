@@ -11,7 +11,7 @@
             font-size: 25px;
             text-align: left;
         }
-        input.quantity {
+        input.quantity, input.quantity2 {
             width: 70px;
             border: none;
             border-radius: 3px;
@@ -24,15 +24,33 @@
         }
         p {
             font-size: 14px;
+            
         }
     }
 }
 
-#demo {
+.addInfo {
+    font-weight: 600;
+}
+
+.addInfo2 {
+    font-size: 13px!important;
+    font-weight: 600;
+}
+
+
+
+label {
+    font-size: 13px
+}
+
+
+
+#demo, #demo2 {
     color: red;
 }
 
-.total {
+.total, .total2 {
     font-weight: 600;
 }
 
