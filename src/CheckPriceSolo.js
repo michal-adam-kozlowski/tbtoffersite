@@ -28,11 +28,11 @@ class CheckPriceSolo extends React.Component {
                 <h4 className="title">{this.props.content.title.titleSolo}</h4>
                 <p className="price" data-price={this.props.content.price}>Cena za osobę: {this.props.content.price} PLN</p>
                 <p>Fundusz turystyczny: 10 PLN/osoba</p>
-                <p className="description">Liczba osób: <input type="text" className="quantity" ></input></p>
-                <p className="firstPayment">Pierwsza rata: <span id="firstPaymentSolo"> ... PLN </span></p>
-                <p className="secondPayment">Druga rata: <span id="secondPaymentSolo"> ... PLN </span></p>
-                <p className="thirdPayment">Trzecia rata: <span id="thirdPaymentSolo"> ... PLN </span></p>
-                <p className="total">Łączna cena rezerwacji: <br></br> <span id="totalSolo">{this.props.content.price + 10} PLN</span></p>
+                <p className="description">Liczba osób: <input type="text"  className="quantity" ></input></p>
+                <p className="firstPayment">Pierwsza rata: <span id="firstPaymentSolo">0 PLN </span></p>
+                <p className="secondPayment">Druga rata: <span id="secondPaymentSolo">0 PLN </span></p>
+                <p className="thirdPayment">Trzecia rata: <span id="thirdPaymentSolo"> 0 PLN</span></p>
+                <p className="total">Łączna cena rezerwacji: <br></br> <span id="totalSolo">0 PLN</span></p>
             </div>
 
         );
@@ -66,7 +66,7 @@ class CheckPriceSoloWrapper extends React.Component {
         return (
             <div className="popover-container" ref={node => { this.node = node; }}>
                 <button className="choose">
-                    <a href="#bottom" onClick={this.handleClick}> Sprawdź cenę</a>
+                    <a href="#bottom" onClick={this.handleClick}> Oblicz cenę</a>
                 </button>
                 {this.state.popupVisible && (
                     <div id="popOver" className="popover">

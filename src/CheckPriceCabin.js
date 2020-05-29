@@ -48,7 +48,7 @@ class CheckPriceCabinWrapper extends React.Component {
         return (
             <div className="popover-container" ref={node => { this.node = node; }}>
                 <button className="choose">
-                    <a href="#bottom" onClick={this.handleClick}> Sprawdź cenę</a>
+                    <a href="#bottom" onClick={this.handleClick}> Oblicz cenę</a>
                 </button>
                 {this.state.popupVisible && (
                     <div id="popOver" className="popover">

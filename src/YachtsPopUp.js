@@ -69,7 +69,7 @@ class YachtsPopup extends React.Component {
           </section>
 
           <section id="scrollDown">
-            <div className="checkText">Oblicz cenę 
+            <div className="checkText">Wybierz jednostkę i sprawdź system płatności 
             <div className="scrollDownBox"><a href=".infoContent" className="scroll-down" address="true"> </a></div></div>
           </section>
           <div className="infoContent"><p>{this.props.content.info}</p>
