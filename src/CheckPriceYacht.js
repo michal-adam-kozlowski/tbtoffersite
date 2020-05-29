@@ -37,7 +37,7 @@ class CheckPriceYacht extends React.Component {
             var fund = 10;
 
             if (quantity > 11 || quantity < 6) {
-                document.getElementById("demo").innerHTML = "rezerwacja całego jachtu możliwa jest dla grupy od 7 do 12 osób";
+                document.getElementById("demo").innerHTML = "Rezerwacja całego jachtu możliwa jest dla grupy od 7 do 12 osób";
                 $("#firstPayment").text(" ? PLN");
                 $("#secondPayment").text(" ? PLN");
                 $("#thirdPayment").text(" ? PLN");

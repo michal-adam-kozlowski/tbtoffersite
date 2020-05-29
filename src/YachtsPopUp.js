@@ -65,10 +65,12 @@ class YachtsPopup extends React.Component {
               <a href="#target-1" className="arrow arrow-next"> </a>
             </div>
 
-            <section>
-              <div className="checkText">Oblicz cenę</div>
-              <a href=".infoContent" className="scroll-down" address="true"> </a>
-            </section>
+
+          </section>
+
+          <section id="scrollDown">
+            <div className="checkText">Oblicz cenę 
+            <div className="scrollDownBox"><a href=".infoContent" className="scroll-down" address="true"> </a></div></div>
           </section>
           <div className="infoContent"><p>{this.props.content.info}</p>
             <p><strong>{this.props.content.info1Title}</strong></p>
@@ -101,7 +103,7 @@ class YachtsPopup extends React.Component {
               </Tabs>
               <div id="bottom"></div>
             </div>
-           
+
           </div>
           <button id="close" onClick={this.props.closePopup}><i className="fas fa-times"></i></button>
         </div>
