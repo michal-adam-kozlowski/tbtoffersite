@@ -1,33 +1,118 @@
 import React from 'react';
 import "./CheckPrice.scss";
-import $ from "jquery";
 import Accordion from "./PayAccordion.js";
+import $ from "jquery";
 
+class AddSkipper extends React.Component {
+
+    componentDidMount = () => {
+        $("#submitBtn").click(function (e) {
+            e.preventDefault()
+            $('.quantity').prop('disabled', true);
+            $('#amountOfPayments').css('display', 'block');
+
+        });
+    }
+
+    render() {
+        return (
+            <>
+                <p className="addInfo2">Liczba osób zostanie pomniejszona o 1</p>
+                <p className="description">Wpisz liczbę osób: <input type="text" className="quantity" ></input></p>
+                <p id="infoCrew"></p>
+                <button id="submitBtn" type="submit">Potwierdź</button>
+                <div id="amountOfPayments">
+                    <p className="firstPayment">Pierwsza rata: <span id="firstPayment">0 PLN </span></p>
+                    <p className="secondPayment">Druga rata: <span id="secondPayment"> 0 PLN </span></p>
+                    <p className="thirdPayment">Trzecia rata: <span id="thirdPayment">0 PLN  </span></p>
+                    <p className="total">Łączna cena rezerwacji: <br></br> <span id="totalYacht">  </span></p>
+                    <p>Ostateczna liczba osób: <span id="finalNumber1">  </span></p>
+                </div>
+            </>
+        )
+    }
+}
+
+class WithoutSkipper extends React.Component {
+
+    componentDidMount = () => {
+        $("#submitBtn2").click(function (event) {
+            event.preventDefault()
+            $('.quantity2').prop('disabled', true);
+            $('#amountOfPayments2').css('display', 'block');
+
+        });
+    }
+
+    render() {
+        return (
+            <>
+                <p className="description">Wpisz liczbę osób: <input type="text" className="quantity2" ></input></p>
+                <p id="infoCrew2"></p>
+                <button id="submitBtn2" type="submit">Potwierdź</button>
+                <div id="amountOfPayments2">
+                    <p className="firstPayment">Pierwsza rata: <span id="firstPayment2">0 PLN </span></p>
+                    <p className="secondPayment">Druga rata: <span id="secondPayment2"> 0 PLN </span></p>
+                    <p className="thirdPayment">Trzecia rata: <span id="thirdPayment2"> 0 PLN </span></p>
+                    <p className="total">Łączna cena rezerwacji: <br></br> <span id="totalYacht2">0 PLN </span></p>
+                    <p>Ostateczna liczba osób: <span id="finalNumber2"> 0 </span></p>
+                </div>
+            </>
+        )
+    }
+}
 class CheckPriceYacht extends React.Component {
 
-    constructor() {
-        super();
-
-        this.handleChoose = this.handleChoose.bind(this);
-        
+    constructor(props) {
+        super(props);
 
         this.state = {
-            visibleYes: true,
-            visibleNo: false
+            isConfirmedYes: false,
+            isConfirmedNo: false,
+            isFormSubmited: false,
         };
     }
 
-    handleChoose() {
+    handleChangeY = () => {
 
         this.setState(prevState => ({
-            visibleNo: !prevState.visibleNo,
-            visibleYes: !prevState.visibleYes,
+            isConfirmedYes: !prevState.isConfirmedYes,
+            isConfirmedNo: false,
+            isFormSubmited: false
         }));
 
     }
 
+    handleChangeN = () => {
 
-    
+        this.setState(prevState => ({
+            isConfirmedYes: false,
+            isConfirmedNo: !prevState.isConfirmedNo,
+            isFormSubmited: false
+        }));
+
+    }
+
+    displayMessage = () => {
+
+        if (this.state.isFormSubmited) {
+            if (this.state.isConfirmedYes) {
+                return <AddSkipper />
+            } else if (this.state.isConfirmedNo) {
+                return <WithoutSkipper />
+            }
+        }
+    }
+
+    handleFormSubmit = (event) => {
+        event.preventDefault()
+        if (!this.state.isFormSubmited) {
+            this.setState({
+                isFormSubmited: true
+            })
+        }
+    }
+
 
     componentDidMount = () => {
 
@@ -37,23 +122,17 @@ class CheckPriceYacht extends React.Component {
             var fund = 10;
 
             if (quantity > 11 || quantity < 6) {
-                document.getElementById("demo").innerHTML = "Rezerwacja całego jachtu możliwa jest dla grupy od 7 do 12 osób";
-                $("#firstPayment").text(" 0 PLN");
-                $("#secondPayment").text(" 0 PLN");
-                $("#thirdPayment").text(" 0 PLN");
-                $("#totalYacht").text(" 0 PLN");
-                $("#quantity3").text(" 0 ");
+                document.getElementById("infoCrew").innerHTML = "Rezerwacja całego jachtu możliwa jest dla grupy od 7 do 12 osób";
+                $("#submitBtn").prop("disabled", true)
             } else {
-                document.getElementById("demo").innerHTML = " ";
+                document.getElementById("infoCrew").innerHTML = " ";
                 $("#firstPayment").text(((priceYacht + fund) * quantity) * 0.3 + " PLN");
                 $("#secondPayment").text(((priceYacht + fund) * quantity) * 0.3 + " PLN");
                 $("#thirdPayment").text(((priceYacht + fund) * quantity) * 0.4 + " PLN");
                 $("#totalYacht").text((priceYacht + fund) * quantity + " PLN");
-                $("#quantity3").text(quantity);
+                $("#finalNumber1").text(quantity);
+                $("#submitBtn").prop("disabled", false)
             }
-
-    
-
         })
 
         $(".checkPriceYacht").on("keyup", ".quantity2", function () {
@@ -62,24 +141,23 @@ class CheckPriceYacht extends React.Component {
             var fund = 10;
 
             if (quantity2 > 12 || quantity2 < 7) {
-                document.getElementById("demo2").innerHTML = "rezerwacja całego jachtu możliwa jest dla grupy od 7 do 12 osób";
-                $("#firstPayment2").text("0 PLN");
-                $("#secondPayment2").text("0 PLN");
-                $("#thirdPayment2").text("0 PLN");
-                $("#totalYacht2").text("0 PLN");
-                $("#quantity4").text(quantity2);
+                document.getElementById("infoCrew2").innerHTML = "rezerwacja całego jachtu możliwa jest dla grupy od 7 do 12 osób";
+                $("#submitBtn2").prop("disabled", true)
             } else {
-                document.getElementById("demo2").innerHTML = " ";
+                document.getElementById("infoCrew2").innerHTML = " ";
                 $("#firstPayment2").text(((priceYacht2 + fund) * quantity2) * 0.3 + " PLN");
                 $("#secondPayment2").text(((priceYacht2 + fund) * quantity2) * 0.3 + " PLN");
                 $("#thirdPayment2").text(((priceYacht2 + fund) * quantity2) * 0.4 + " PLN");
                 $("#totalYacht2").text((priceYacht2 + fund) * quantity2 + " PLN");
-                $("#quantity4").text(quantity2);
+                $("#finalNumber2").text(quantity2);
+                $("#submitBtn2").prop("disabled", false)
+
             }
 
-    
+
 
         })
+
 
         $("a[href='#bottom']").click(function () {
             $("#bottom").animate({ scrollTop: $(".popover-container").height() }, "slow");
@@ -96,39 +174,20 @@ class CheckPriceYacht extends React.Component {
                 <h4 className="title">{this.props.content.title.titleYacht}</h4>
                 <p className="price" data-price={this.props.content.price}>Cena za osobę: {this.props.content.price} PLN</p>
                 <p>Fundusz turystyczny: 10 PLN/osoba</p>
-                <p className="addInfo">Czy chcesz, żebyśmy zapewnili Ci skippera0</p>
-                <div>
-                    <label class="radio">
-                        <input name="test" type="radio" value="yes" defaultChecked onChange={this.handleChoose} />
+                <p className="addInfo">Czy chcesz, żebyśmy zapewnili Ci skippera?</p>
+                <form onSubmit={this.handleFormSubmit}>
+                    <label htmlFor="testyes">
+                        <input id="testyes" name="test" type="radio" value="yes" checked={this.state.isConfirmedYes} onChange={this.handleChangeY} />
                             TAK
                     </label>
-                    <label class="radio">
-                        <input name="test" type="radio" value="no" onChange={this.handleChoose} />
-                            NIE (mamy swojego skippera)
+                    <label htmlFor="testno">
+                        <input id="testno" name="test" type="radio" value="no" checked={this.state.isConfirmedNo} onChange={this.handleChangeN} />
+                            NIE
                     </label>
-                </div>
-                {this.state.visibleYes && (
-                    <>
-                    <p className="addInfo2">Liczba osób zostanie pomniejszona o 1</p>
-                    <p className="description">Wpisz liczbę osób: <input type="text" className="quantity" ></input></p>
-                    <p id="demo"></p>
-                    <p className="firstPayment">Pierwsza rata: <span id="firstPayment">0 PLN </span></p>
-                    <p className="secondPayment">Druga rata: <span id="secondPayment"> 0 PLN </span></p>
-                    <p className="thirdPayment">Trzecia rata: <span id="thirdPayment">0 PLN  </span></p>
-                    <p className="total">Łączna cena rezerwacji: <br></br> <span id="totalYacht">  </span></p>
-                    <p>Ostateczna liczba osób: <span id="quantity3">  </span></p>
-               </> )}
-               {this.state.visibleNo && (
-                    <>
-                    
-                    <p className="description">Wpisz liczbę osób: <input type="text" className="quantity2" ></input></p>
-                    <p id="demo2"></p>
-                    <p className="firstPayment">Pierwsza rata: <span id="firstPayment2">0 PLN </span></p>
-                    <p className="secondPayment">Druga rata: <span id="secondPayment2"> 0 PLN </span></p>
-                    <p className="thirdPayment">Trzecia rata: <span id="thirdPayment2"> 0 PLN </span></p>
-                    <p className="total">Łączna cena rezerwacji: <br></br> <span id="totalYacht2">0 PLN </span></p>
-                    <p>Ostateczna liczba osób: <span id="quantity4"> 0 </span></p>
-               </> )}
+                    <button type="submit">Potwierdź</button>
+                </form>
+
+                {this.displayMessage()}
             </div>
         );
     }
@@ -146,16 +205,12 @@ class CheckPriceYachtWrapper extends React.Component {
     }
 
     handleClick() {
-
-
         this.setState(prevState => ({
             popupVisible: !prevState.popupVisible,
         }));
     }
 
-
     render() {
-
         return (
             <div className="popover-container" ref={node => { this.node = node; }}>
                 <button className="choose">

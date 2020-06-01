@@ -1,3 +1,7 @@
+#amountOfPayments2, #amountOfPayments {
+    display: none
+}
+
 .checkPriceWrapper {
     display: flex;
     > div {
@@ -47,7 +51,7 @@ label {
 
 
 
-#demo, #demo2 {
+#infoCrew, #infoCrew2 {
     color: red;
     font-size: 12px
 }
